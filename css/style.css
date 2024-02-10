@@ -86,7 +86,7 @@ p {
 }
 
 img {
-	max-width: 100%;
+	max-width: 130%;
 }
 
 input:focus,
@@ -498,7 +498,7 @@ ol {
 }
 
 .ha-text {
-	padding-top: 74px;
+	padding-top: 30px;
 }
 
 .ha-text h2 {
@@ -695,13 +695,13 @@ ol {
 }
 
 .schedule-tab .st-content .sc-pic img {
-	height: 120px;
-	width: 120px;
-	border-radius: 50%;
+	height: 300px;
+	width: 300px;
+	border-radius: 10%;
 }
 
 .schedule-tab .st-content .sc-text {
-	padding: 58px 0;
+	padding: 58px 10%;
 }
 
 .schedule-tab .st-content .sc-text h4 {
@@ -1133,8 +1133,10 @@ ol {
 }
 
 .partner-logo {
-	padding-bottom: 50px;
-	border-bottom: 1px solid #2f3039;
+	padding-bottom: 40px;
+	padding-top:40px ;
+
+	border-top: 1px solid #2f3039;
 }
 
 .partner-logo .pl-table {
@@ -1149,7 +1151,7 @@ ol {
 }
 
 .footer-text {
-	text-align: center;
+	text-align: left;
 	padding-top: 60px;
 }
 
@@ -1220,7 +1222,7 @@ ol {
 }
 
 .footer-text .ft-social a:last-child {
-	margin-right: 0;
+	margin-right: 10px;
 }
 
 /* ----------------------------------- Other Pages Styles ------------------------------- */
