@@ -120,3 +120,21 @@
     });
 
 })(jQuery);
+
+
+ /* sticky nav bar*/
+ document.addEventListener('DOMContentLoaded', function() {
+    var navbar = document.getElementById('navbar');
+
+    // Add scroll event listener
+    window.addEventListener('scroll', function() {
+        // Check if page has been scrolled
+        if (window.scrollY > 0) {
+            // Add a class to make navbar not transparent
+            navbar.classList.remove('transparent');
+        } else {
+            // Remove the class to make navbar transparent
+            navbar.classList.add('transparent');
+        }
+    });
+});
