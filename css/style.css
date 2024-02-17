@@ -414,7 +414,7 @@ ol {
 
 .hero-section .hero-text span {
     font-size: 16px;
-    color: #f44949;
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -2549,3 +2549,47 @@ ol {
         flex-basis: 25%; /* Each countdown item takes up 25% of the width */
     }
 }
+
+/* Text on Image Css */
+.heading {
+	margin: 0 auto;
+  }
+  
+  .heading img {
+	padding: none;
+	margin: none;
+	width: 100%;
+	height: auto;
+  }
+  
+  .title-wrapper {
+	color: white;
+	font-size: 2em;
+	text-align: left;
+	position: absolute;
+  /*   solution 1: */
+	left: 5%;
+	right:5%;
+	top: 5%;
+	bottom:5%;
+  /*   solution 2   */
+  /*   left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%); */
+  }
+
+  .title-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity here */
+    color: white; /* Color of text on the overlay */
+    padding: 20px;
+    box-sizing: border-box;
+  }
