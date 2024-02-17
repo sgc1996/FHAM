@@ -172,7 +172,7 @@ ol {
 .schedule-tab .nav-tabs .nav-item .nav-link.active,
 .site-btn {
 	background-image: -o-linear-gradient(330deg, #ee8425 0%, #f9488b 100%), -o-linear-gradient(330deg, #ee8425 0%, #f9488b 100%);
-	background-image: linear-gradient(120deg, #252525 0%, #af0000 100%), linear-gradient(120deg, #ee8425 0%, #f94848 100%);
+	background-image: linear-gradient(120deg, #00f8ff 0%, #af0000 100%), linear-gradient(120deg, #ee8425 0%, #f94848 100%);
 }
 
 /* buttons */
@@ -187,7 +187,7 @@ ol {
 	border-radius: 50px;
 	background-image: -webkit-gradient(linear, left top, right top, from(#ee8425), to(#f9488b)), -webkit-gradient(linear, left top, right top, from(#ee8425), to(#f9488b));
 	background-image: -o-linear-gradient(left, #ee8425 0%, #f9488b 100%), -o-linear-gradient(left, #ee8425 0%, #f9488b 100%);
-	background-image: linear-gradient(to right, #252525 0%, #ff0000 100%), linear-gradient(to right, #ee8425 0%, #f9488b 100%);
+	background-image: linear-gradient(to right, #00f8ff 0%, #ff0000 100%), linear-gradient(to right, #ee8425 0%, #f9488b 100%);
 }
 
 .site-btn {
@@ -310,7 +310,7 @@ ol {
 .nav-menu .mainmenu ul li .dropdown {
     position: absolute;
     width: 180px;
-    background: #ffffff;
+    background: #af00003d;
     z-index: 99;
     left: 0;
     top: 130px;
@@ -338,7 +338,7 @@ ol {
 }
 
 .nav-menu .mainmenu ul li .dropdown li a:hover {
-    color: #f44949;
+    color: #00f8ff ;
 }
 
 .nav-menu .mainmenu ul li .dropdown li a:after {
