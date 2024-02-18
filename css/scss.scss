@@ -1,0 +1,11 @@
+/* Adjust the overlay color and opacity here */
+#glow {
+	@include transition(.5s ease-in-out);
+	@include textShadow((0 0 0 transparent,0 0 0 transparent));
+	color:rgba(0,0,0,.1);
+	overflow:visible;
+	&:hover {
+	  color:white;
+	  @include textShadow((0 0 10px #ff401a,0 0 50px #ff9b1a));
+	}
+  }
