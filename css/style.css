@@ -401,12 +401,10 @@ ol {
 -----------------------*/
 
 .hero-section {
-    padding-top: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100%; /* Ensure the hero section takes the full height of its container */
 }
 
 .hero-section .hero-text {
@@ -1786,7 +1784,7 @@ ol {
 -----------------------*/
 
 .blog-hero-section {
-	padding: 200px 0;
+	padding: 0 0;
 }
 
 .bh-text {
