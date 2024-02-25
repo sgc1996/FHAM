@@ -2592,3 +2592,46 @@ ol {
     padding: 20px;
     box-sizing: border-box;
   }
+
+  .hero-section {
+    position: relative;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Adjust the color to make it visible against the video */
+    z-index: 2;
+}
+
+.hero-text span {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.primary-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff; /* Adjust the background color */
+    color: #333; /* Adjust the text color */
+    text-decoration: none;
+}
