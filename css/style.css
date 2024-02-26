@@ -2932,3 +2932,57 @@ a {
 	padding-top: 10px;
   }
 }
+
+ /* Whatsapp Icon
+--------------------------------*/
+/* for desktop */
+.whatsapp_float {
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:105px;
+	right:42px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+		  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+		  z-index:100;
+  }
+  
+  .whatsapp-icon {
+	margin-top:16px;
+  }
+  /* for mobile */
+  @media screen and (max-width: 767px){
+	   .whatsapp-icon {
+	 margin-top:10px;
+	   }
+	  .whatsapp_float {
+		  width: 40px;
+		  height: 40px;
+		  bottom: 107px;
+		  right: 52px;
+		  font-size: 22px;
+	  }
+  }
+	/* End Whatsapp Icon
+  --------------------------------*/
+/* Styles for the back to top button */
+#back-to-top {
+	display: none;
+	position: fixed;
+	bottom: 30px;
+	right: 45px;
+	background-color: #9b0d14;
+	color: #fff;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 50px;
+	font-size: 24px;
+	cursor: pointer;
+	z-index: 1000;
+}
