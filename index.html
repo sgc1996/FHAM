@@ -83,40 +83,76 @@
 </section>
 
 
-    <!-- Counter Section Begin -->
-    <section class="counter-section bg-gradient">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="counter-text">
-                        <span>Exhibition Date</span>
-                        <h3>Count Every Second <br />Until the Event</h3>
-                    </div>
+<!-- Counter Section Begin -->
+<section class="custom-counter-section bg-gradient">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="custom-counter-text">
+                    <span>Event Date</span>
+                    <h3>Count Every Second <br />Until the Big Day</h3>
                 </div>
-                <div class="col-lg-8">
-                    <div class="cd-timer" id="countdown">
-                        <div class="cd-item">
-                            <span>100</span>
-                            <p>Days</p>
-                        </div>
-                        <div class="cd-item">
-                            <span>18</span>
-                            <p>Hours</p>
-                        </div>
-                        <div class="cd-item">
-                            <span>46</span>
-                            <p>Minutes</p>
-                        </div>
-                        <div class="cd-item">
-                            <span>32</span>
-                            <p>Seconds</p>
-                        </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="custom-timer" id="custom-countdown">
+                    <div class="custom-item" id="custom-days">
+                        <span>0</span>
+                        <p>Days</p>
+                    </div>
+                    <div class="custom-item" id="custom-hours">
+                        <span>0</span>
+                        <p>Hours</p>
+                    </div>
+                    <div class="custom-item" id="custom-minutes">
+                        <span>0</span>
+                        <p>Minutes</p>
+                    </div>
+                    <div class="custom-item" id="custom-seconds">
+                        <span>0</span>
+                        <p>Seconds</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Counter Section End -->
+    </div>
+</section>
+<!-- Counter Section End -->
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("September 23, 2024 00:00:00").getTime();
+
+    // Update the countdown every 1 second
+    var x = setInterval(function() {
+
+        // Get the current date and time
+        var now = new Date().getTime();
+
+        // Calculate the remaining time
+        var distance = countDownDate - now;
+
+        // Calculate days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result
+        document.getElementById("custom-days").innerHTML = "<span>" + days + "</span><p>Days</p>";
+        document.getElementById("custom-hours").innerHTML = "<span>" + hours + "</span><p>Hours</p>";
+        document.getElementById("custom-minutes").innerHTML = "<span>" + minutes + "</span><p>Minutes</p>";
+        document.getElementById("custom-seconds").innerHTML = "<span>" + seconds + "</span><p>Seconds</p>";
+
+        // If the countdown is over, display a message
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("custom-countdown").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+
+
+
 
     <!-- Home About Section Begin -->
     <section class="home-about-section spad">
