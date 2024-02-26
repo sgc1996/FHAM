@@ -2849,48 +2849,75 @@ a {
   min-width: 50%;
   padding: 15px;
 }
-.left-details {
-  float: left;
-  font-size: 16px;
+
+  /* Adjustments for left, middle, and right details */
+.left-details,
+.middle-details,
+.right-details {
+  display: inline-block; /* Change from float to inline-block */
+  vertical-align: top; /* Align to the top */
+  font-size: 17px; /* Adjust font size as needed */
+  margin: 0 75px; /* Add margin for spacing */
 }
 
-.right-details {
-  float: right;
-  font-size: 14px;
+.middle-details {
+  text-align: center; /* Center-align the content */
+}
+
+/* Clear floats after the right details */
+.features::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 @media (max-width: 1200px) {
   /* Reduce font size to 10px for both left and right details */
-  .left-details, .right-details {
+  .left-details, .right-details, .middle-details {
     font-size: 10px;
+  }
+  .right-details {
+	padding-top: 10px;
   }
 }
 @media (max-width: 970px) {
   /* Reduce font size to 10px for both left and right details */
-  .left-details, .right-details {
+  .left-details, .right-details, .middle-details {
     font-size: 0.6rem;
+  }
+  .right-details {
+	padding-top: 10px;
   }
 }
 @media (max-width: 851px) {
   /* Reduce font size to 10px for both left and right details */
-  .left-details, .right-details {
+  .left-details, .right-details, .middle-details {
     font-size: 0.5rem;
   }
 }
 @media (max-width: 767px) {
   /* Reduce font size to 10px for both left and right details */
-  .left-details, .right-details {
+  .left-details, .right-details, .middle-details {
     font-size: 10px;
+  }
+  .right-details {
+	padding-top: 10px;
   }
 }
 @media (max-width: 450px) {
   /* Reduce font size to 10px for both left and right details */
-  .left-details, .right-details {
+  .left-details, .right-details, .middle-details {
     font-size: 8px;
+  }
+  .right-details {
+	padding-top: 10px;
   }
 }
 @media (max-width: 370px) {
   /* Reduce font size to 10px for both left and right details */
-  .left-details, .right-details {
+  .left-details, .right-details, .middle-details {
     font-size: 7px;
+  }
+  .right-details {
+	padding-top: 10px;
   }
 }
