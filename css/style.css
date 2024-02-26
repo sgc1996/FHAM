@@ -311,7 +311,7 @@ ol {
 .nav-menu .mainmenu ul li .dropdown {
     position: absolute;
     width: 180px;
-    background: #af00003d;
+    background: #af0000 ;
     z-index: 99;
     left: 0;
     top: 130px;
@@ -336,6 +336,7 @@ ol {
     -o-transition: all 0.3s;
     transition: all 0.3s;
     text-transform: capitalize;
+	color: aliceblue;
 }
 
 .nav-menu .mainmenu ul li .dropdown li a:hover {
