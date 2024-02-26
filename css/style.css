@@ -434,7 +434,6 @@ ol {
     padding: 40px 0;
 }
 
-
 .custom-counter-text span {
     font-size: 16px;
     color: #ffffff;
@@ -447,16 +446,14 @@ ol {
     margin-top: 10px;
 }
 
-
-
 .custom-timer {
-    text-align: right;
+    text-align: center; /* Center the timer on smaller screens */
 }
 
 .custom-item {
     display: inline-block;
     text-align: center;
-    margin-left: 35px;
+    margin: 10px; /* Add space between items */
     height: 120px;
     width: 120px;
     padding-top: 32px;
@@ -475,22 +472,42 @@ ol {
     border-radius: 4px;
 }
 
-.custom-item:first-child {
-    margin-left: 0;
-}
-
 .custom-item span {
-    font-size: 60px;
+    font-size: 36px; /* Decrease font size for smaller screens */
     color: #ffffff;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 1;
 }
 
 .custom-item p {
-    font-size: 18px;
+    font-size: 14px; /* Decrease font size for smaller screens */
     color: #ffffff;
-    margin-bottom: 0;
-    line-height: 30px;
+    margin: 5px 0 0; /* Adjust margin */
+    line-height: 1;
+}
+
+/* Adjust styles for smaller screens */
+@media (max-width: 767px) {
+    .custom-counter-section {
+        padding: 20px 0; /* Decrease padding */
+    }
+    
+    .custom-counter-text h3 {
+        font-size: 18px; /* Decrease font size */
+    }
+
+    .custom-item {
+        height: 100px; /* Decrease height */
+        width: 100px; /* Decrease width */
+    }
+
+    .custom-item span {
+        font-size: 24px; /* Decrease font size */
+    }
+
+    .custom-item p {
+        font-size: 12px; /* Decrease font size */
+    }
 }
 
 
