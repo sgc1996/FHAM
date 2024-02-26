@@ -364,7 +364,7 @@ ol {
 
 .nav-menu .mainmenu ul li a {
     font-size: 16px;
-    color: #2c2c2c;
+    color: black;
     text-transform: uppercase;
     font-weight: 600;
     padding: 42px 0;
@@ -434,6 +434,7 @@ ol {
     padding: 40px 0;
 }
 
+
 .custom-counter-text span {
     font-size: 16px;
     color: #ffffff;
@@ -445,6 +446,8 @@ ol {
     line-height: 38px;
     margin-top: 10px;
 }
+
+
 
 .custom-timer {
     text-align: right;
@@ -489,6 +492,7 @@ ol {
     margin-bottom: 0;
     line-height: 30px;
 }
+
 
 /*---------------------
   Home About Section
