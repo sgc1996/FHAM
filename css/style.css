@@ -38,6 +38,7 @@ body {
 	font-family: "josefin Sans", ; /* Change font-family to Georgia */
 	-webkit-font-smoothing: antialiased;
 	font-smooth: antialiased;
+	
 }
 
 h1,
@@ -86,7 +87,7 @@ p {
 }
 
 img {
-	max-width: 130%;
+	max-width: 100%;
 }
 
 input:focus,
@@ -228,19 +229,19 @@ ol {
 	0% {
 		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
-		border: 4px solid #f44336;
+		border: 4px solid #f5523b;
 		border-left-color: transparent;
 	}
 	50% {
 		-webkit-transform: rotate(180deg);
 		transform: rotate(180deg);
-		border: 4px solid #673ab7;
+		border: 4px solid #0072ad;
 		border-left-color: transparent;
 	}
 	100% {
 		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg);
-		border: 4px solid #f44336;
+		border: 4px solid #f5523b;
 		border-left-color: transparent;
 	}
 }
@@ -248,17 +249,17 @@ ol {
 @-webkit-keyframes loader {
 	0% {
 		-webkit-transform: rotate(0deg);
-		border: 4px solid #f44336;
+		border: 4px solid #0072ad;
 		border-left-color: transparent;
 	}
 	50% {
 		-webkit-transform: rotate(180deg);
-		border: 4px solid #673ab7;
+		border: 4px solid #f5523b;
 		border-left-color: transparent;
 	}
 	100% {
 		-webkit-transform: rotate(360deg);
-		border: 4px solid #f44336;
+		border: 4px solid #0072ad;
 		border-left-color: transparent;
 	}
 }
@@ -2638,20 +2639,6 @@ ol {
 }
 
 /* Price Table */
-
-:root {
-	--c-blue-900: #222;
-	--c-blue-800: #222;
-	--c-blue-700: #222;
-	--c-blue-500: #222;
-	--c-blue-300: #222;
-	--c-blue-200: #222;
-	--c-blue-100: #222;
-
-	--c-green-400: white;
-}
-
-
 button,
 input,
 select,
