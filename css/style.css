@@ -1212,7 +1212,7 @@ ol {
 
 .footer-text ul li {
 	list-style: none;
-	display: inline-block;
+	display: inherit;
 	margin-right: 52px;
 }
 
@@ -1222,7 +1222,7 @@ ol {
 
 .footer-text ul li a {
 	font-size: 18px;
-	color: #a0a1b5;
+	color: #ffffff;
 	display: inline-block;
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
@@ -2994,4 +2994,8 @@ a {
 	font-size: 24px;
 	cursor: pointer;
 	z-index: 1000;
+}
+.con-info ul li {
+    text-indent: -15px; /* Adjust the value as needed */
+    padding-left: 30px; /* Adjust the value to match the indent */
 }
