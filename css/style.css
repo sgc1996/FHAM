@@ -397,6 +397,15 @@ ol {
     background-color: transparent !important;
     box-shadow: none !important;
 }
+/*Scroll Updated CSS */
+.logo img {
+    max-width: 200px; /* Set maximum width for the logo */
+    transition: max-width 0.3s; /* Add transition for smooth resizing */
+}
+
+.scrolled .logo img {
+    max-width: 150px; /* Reduce the maximum width when scrolled */
+}
 
 /*---------------------
   Hero
