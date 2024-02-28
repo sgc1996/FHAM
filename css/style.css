@@ -433,7 +433,8 @@ ol {
     font-size: 16px;
     color: #ffffff;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+	line-height: 5px;
 }
 
 .hero-section .hero-text h2 {
@@ -443,6 +444,7 @@ ol {
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 12px;
+	letter-spacing: -1px;
 }
 
 /* Custom Counter Styles */
@@ -1234,109 +1236,90 @@ ol {
 	width: 100%;
 }
 
-/*---------------------
-  Footer
------------------------*/
-
+/* Footer Section */
 .footer-section {
-	background: #171822;
-	padding-top: 50px;
-	padding-bottom: 60px;
+    background: #171822;
+    padding-top: 50px;
+    padding-bottom: 60px;
 }
 
 .partner-logo {
-	padding-bottom: 40px;
-	padding-top:40px ;
-
-	border-top: 1px solid #2f3039;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #2f3039;
 }
 
 .partner-logo .pl-table {
-	display: inline-block;
-	display: table;
+    display: inline-block;
+    display: table;
 }
 
 .partner-logo .pl-table .pl-tablecell {
-	display: table-cell;
-	vertical-align: middle;
-	height: 41px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 41px;
 }
 
 .footer-text {
-	text-align: left;
-	padding-top: 60px;
+    text-align: left;
+    padding-top: 60px;
 }
 
 .footer-text .ft-logo {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .footer-text .ft-logo a {
-	display: inline-block;
+    display: inline-block;
 }
 
 .footer-text ul {
-	margin-bottom: 18px;
+    margin-bottom: 18px;
 }
 
 .footer-text ul li {
-	list-style: none;
-	display: inherit;
-	margin-right: 52px;
+    list-style: none;
+    display: inherit;
+    margin-right: 52px;
 }
 
 .footer-text ul li:last-child {
-	margin-right: 0;
+    margin-right: 0;
 }
 
 .footer-text ul li a {
-	font-size: 18px;
-	color: #ffffff;
-	display: inline-block;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
+    font-size: 18px;
+    color: #ffffff;
+    display: inline-block;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .footer-text ul li a:hover {
-	color: #f44949;
+    color: #f44949;
 }
 
-.footer-text .copyright-text {
-	font-size: 14px;
-	color: #a0a1b5;
-	margin-bottom: 28px;
+/* Center the copyright text */
+.footer-section .copyrights {
+    text-align: center;
+    margin-top: 20px; /* Adjust as needed */
 }
 
-.footer-text .copyright-text i {
-	color: #f44949;
+.footer-section .copyrights p {
+    font-size: 16px; /* Adjust as needed */
+    color: #a0a1b5;
+    margin: 0;
 }
 
-.footer-text .copyright-text a {
-	color: #a0a1b5;
+.footer-section a {
+    color: #a0a1b5;
+    text-decoration: none;
 }
 
-.footer-text .copyright-text a:hover {
-	color: #f44949;
+.footer-section a:hover {
+    color: #f44949;
 }
-
-.footer-text .ft-social a {
-	display: inline-block;
-	width: 40px;
-	height: 40px;
-	text-align: center;
-	line-height: 40px;
-	font-size: 16px;
-	color: #a3a3ae;
-	border: 1px solid #45464e;
-	border-radius: 50%;
-	margin-right: 15px;
-}
-
-.footer-text .ft-social a:last-child {
-	margin-right: 10px;
-}
-
 /* ----------------------------------- Other Pages Styles ------------------------------- */
 
 /*---------------------
