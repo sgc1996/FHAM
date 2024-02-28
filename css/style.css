@@ -399,7 +399,7 @@ ol {
 }
 /*Scroll Updated CSS */
 .logo img {
-    max-width: 200px; /* Set maximum width for the logo */
+    max-width: 250px; /* Set maximum width for the logo */
     transition: max-width 0.3s; /* Add transition for smooth resizing */
 }
 
@@ -655,6 +655,13 @@ ol {
 	width: 100%;
 	background: #f44949;
 	content: "";
+}
+.home-about-section .ha-pic {
+    text-align: center;
+}
+.home-about-section .text-center {
+    text-align: center;
+    margin-top: 20px; /* Adjust margin-top as needed */
 }
 
 /*---------------------
@@ -2421,6 +2428,7 @@ ol {
 	.ha-pic {
 		margin-right: 0;
 	}
+
 	.hero-section .hero-text {
 		margin-bottom: 20px;
 	}
@@ -3051,3 +3059,30 @@ a {
     text-indent: -15px; /* Adjust the value as needed */
     padding-left: 30px; /* Adjust the value to match the indent */
 }
+
+.ha-pic-2 img {
+    min-width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Hero dates */
+
+.date-container {
+    line-height: 1; /* Set line height to match font size */
+}
+
+.date-container span {
+    display: inline-block;
+    vertical-align: middle; /* Align the numbers and words vertically */
+    line-height: 1; /* Set line height to match font size */
+}
+
+.superscript {
+    position: relative;
+    top: -0.1em; /* Adjust as needed */
+    margin-left: 2px; /* Adjust as needed */
+    font-size: 0.7em; /* Adjust as needed */
+}
+
+
