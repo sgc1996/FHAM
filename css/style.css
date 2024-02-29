@@ -1245,9 +1245,11 @@ ol {
 
 /* Footer Section */
 .footer-section {
-    background: #171822;
+    background: #171822 url('footer-back.png') center/cover repeat; /* Background color and image */
     padding-top: 50px;
     padding-bottom: 60px;
+    color: white; /* Text color */
+    font-family: Arial, sans-serif; /* Font family */
 }
 
 .partner-logo {
@@ -1315,12 +1317,12 @@ ol {
 
 .footer-section .copyrights p {
     font-size: 16px; /* Adjust as needed */
-    color: #a0a1b5;
+    color: #000000;
     margin: 0;
 }
 
 .footer-section a {
-    color: #a0a1b5;
+    color: #0702ad;
     text-decoration: none;
 }
 
