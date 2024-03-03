@@ -1303,6 +1303,8 @@ ol {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+	padding-left: 30px;
+	text-indent: -15px;
 }
 
 .footer-text ul li a:hover {
@@ -1352,7 +1354,7 @@ ol {
 
 .breadcrumb-text .bt-option a {
 	font-size: 18px;
-	color: #6a6b7c;
+	color: #7b0006;
 	display: inline-block;
 	margin-right: 25px;
 	position: relative;
@@ -1368,7 +1370,7 @@ ol {
 
 .breadcrumb-text .bt-option span {
 	display: inline-block;
-	color: #a0a1b5;
+	color: #9b0d14;
 }
 
 /*---------------------
@@ -2226,26 +2228,33 @@ ol {
 
 .cc-text .cs-text .ct-address span {
 	color: #ffffff;
+	font-weight: bold;
 }
 
 .cc-text .cs-text .ct-address p {
 	color: #ffffff;
+	font-weight: bold;
 }
 
 .cc-text .cs-text ul li {
 	color: #ffffff;
+	font-weight: bold;
+
 }
 
 .cc-text .cs-text ul li span {
 	color: #ffffff;
+	font-weight: bold;
 }
 
 .cc-text .cs-text .ct-links span {
 	color: #ffffff;
+	font-weight: bold;
 }
 
 .cc-text .cs-text .ct-links p {
 	color: #ffffff;
+	font-weight: bold;
 }
 
 .cc-map {
@@ -3059,7 +3068,7 @@ a {
 }
 .con-info ul li {
     text-indent: -15px; /* Adjust the value as needed */
-    padding-left: 0px; /* Adjust the value to match the indent */
+    padding-left: 30px; /* Adjust the value to match the indent */
 }
 
 .ha-pic-2 img {
