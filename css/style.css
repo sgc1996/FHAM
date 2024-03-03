@@ -3097,4 +3097,40 @@ a {
 	margin-top: 20px;
 }
 
+/* Challenge winners section */
+.winners {
+	text-align: center;
+}
 
+.winners ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 0;
+	display: inline-block;
+	text-align: left;
+}
+
+.winners li {
+	margin-bottom: 20px;
+}
+.winners-list {
+	background-color: #f8f9fa;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.winners-list h2 {
+	color: #9b0d14;
+}
+
+.winners-list li {
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+.winners-list li strong {
+	color: #dc3545;
+}
