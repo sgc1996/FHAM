@@ -442,7 +442,7 @@ ol {
     color: #ffffff;
     line-height: 72px;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: -30px;
     margin-bottom: 12px;
 	letter-spacing: -1px;
 }
@@ -543,10 +543,10 @@ ol {
 
     .hero-text h2 {
         font-size: 26px; /* Decrease font size */
-        line-height: 20px; /* Decrease line height */
-        margin-top: 10px; /* Adjust margin */
-        margin-bottom: 8px; /* Adjust margin */
-		padding-top: 45px;
+        line-height: 5px; /* Decrease line height */
+        margin-top: 5px; /* Adjust margin */
+        margin-bottom: 5px; /* Adjust margin */
+		
     }
 
     .hero-text span[style="color: black; font-weight: 600;"] {
@@ -1289,7 +1289,7 @@ ol {
 .footer-text ul li {
     list-style: none;
     display: inherit;
-    margin-right: 52px;
+    margin-right: 0px;
 }
 
 .footer-text ul li:last-child {
@@ -3059,7 +3059,7 @@ a {
 }
 .con-info ul li {
     text-indent: -15px; /* Adjust the value as needed */
-    padding-left: 30px; /* Adjust the value to match the indent */
+    padding-left: 0px; /* Adjust the value to match the indent */
 }
 
 .ha-pic-2 img {
@@ -3085,6 +3085,7 @@ a {
     top: -0.1em; /* Adjust as needed */
     margin-left: 2px; /* Adjust as needed */
     font-size: 0.7em; /* Adjust as needed */
+	margin-top: 20px;
 }
 
 
