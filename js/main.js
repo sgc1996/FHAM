@@ -183,3 +183,30 @@ window.addEventListener('scroll', function() {
     header.classList.toggle('scrolled', window.scrollY > 0);
 });
 
+//Static report JS
+function countUp(targetElement, targetValue) {
+    let currentCount = 0;
+    const increment = Math.ceil(targetValue / 500); // Adjust speed by changing divisor
+
+    const intervalId = setInterval(() => {
+      currentCount += increment;
+      if (currentCount >= targetValue) {
+        currentCount = targetValue;
+        clearInterval(intervalId);
+      }
+      targetElement.textContent = currentCount.toLocaleString(); // Format with commas
+    }, 10); // Adjust speed by changing interval
+  }
+
+  const productCountElement = document.getElementById("productCount");
+  const visitorCountElement = document.getElementById("visitorCount");
+  const exhibitorCountElement = document.getElementById("exhibitorCount");
+  const resortCountElement = document.getElementById("resortCount");
+  const brandCountElement = document.getElementById("brandCount");
+
+  countUp(productCountElement, 150);
+  countUp(visitorCountElement, 4700);
+  countUp(exhibitorCountElement, 120);
+  countUp(resortCountElement, 120);
+  countUp(brandCountElement, 10000);
+
