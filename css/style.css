@@ -1594,9 +1594,9 @@ ol {
 }
 
 .testimonial-item p {
-	font-size: 20px;
+	font-size: 14px;
 	color: #171822;
-	line-height: 32px;
+	line-height: 18px;
 	font-weight: 500;
 }
 
@@ -3176,4 +3176,11 @@ a {
 /*Color link Hoover*/
 .red-link:hover {
     color: #0072ad;
+}
+
+/*Owl crousal image*/
+.partner-logo.owl-carousel img {
+    /* Your styles here */
+    width: 50%; /* Example width */
+   margin-left: 90px;
 }
