@@ -3172,3 +3172,8 @@ a {
 .partner-logo-1 .pl-table .logo-name {
     margin-top: 10px;
 }
+
+/*Color link Hoover*/
+.red-link:hover {
+    color: #0072ad;
+}
