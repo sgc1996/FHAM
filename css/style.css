@@ -1252,21 +1252,33 @@ ol {
     font-family: Arial, sans-serif; /* Font family */
 }
 
+.schedule-section {
+    text-align: center;
+}
+
 .partner-logo {
+    display: inline-block;
     padding-bottom: 40px;
     padding-top: 40px;
     border-top: 1px solid #2f3039;
+    margin: 0 auto; /* Center the partner logos */
 }
+
 
 .partner-logo .pl-table {
     display: inline-block;
-    display: table;
+    text-align: center;
 }
 
 .partner-logo .pl-table .pl-tablecell {
     display: table-cell;
     vertical-align: middle;
-    height: 41px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.partner-logo .pl-table .logo-name {
+    margin-top: 10px;
 }
 
 .footer-text {
@@ -3133,4 +3145,30 @@ a {
 
 .winners-list li strong {
 	color: #dc3545;
+}
+
+
+.partner-logo {
+    display: inline-block;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #2f3039;
+    margin: 0 auto; /* Center the partner logos */
+}
+
+
+.partner-logo-1 .pl-table {
+    display: inline-block;
+    text-align: center;
+}
+
+.partner-logo-1 .pl-table .pl-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.partner-logo-1 .pl-table .logo-name {
+    margin-top: 10px;
 }

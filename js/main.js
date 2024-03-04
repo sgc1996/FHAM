@@ -39,6 +39,26 @@
 		Partner Slider
     ----------------------- */
     $(".partner-logo").owlCarousel({
+        items: 3,
+        dots: false,
+        autoplay: true,
+        loop: true,
+        smartSpeed: 1200,
+        margin: 30, // Adjust margin as needed
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 3
+            }
+        }
+    });
+
+    $(".partner-logo-1").owlCarousel({
         items: 6,
         dots: false,
         autoplay: true,
