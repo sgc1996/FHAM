@@ -406,10 +406,43 @@ ol {
 .scrolled .logo img {
     max-width: 150px; /* Reduce the maximum width when scrolled */
 }
+@media (max-width: 1024px) {
+    .logo img {
+		max-width: 200px; /* Set maximum width for the logo */
+		transition: max-width 0.3s; /* Add transition for smooth resizing */
+    }
+}
 
 @media (max-width: 767px) {
     .logo img {
 		max-width: 150px; /* Set maximum width for the logo */
+		transition: max-width 0.3s; /* Add transition for smooth resizing */
+    }
+}
+@media (max-width: 800px) {
+    .logo img {
+		max-width: 175px; /* Set maximum width for the logo */
+		transition: max-width 0.3s; /* Add transition for smooth resizing */
+    }
+}
+@media (max-width: 457px) {
+    .logo img {
+		max-width: 100px; /* Set maximum width for the logo */
+		transition: max-width 0.3s; /* Add transition for smooth resizing */
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .container {
+		max-width: fit-content; /* Set maximum width for the logo */
+		transition: max-width 0.3s; /* Add transition for smooth resizing */
+    }
+}
+@media (max-width: 767px) {
+    .container {
+		max-width: 1200px; /* Set maximum width for the logo */
 		transition: max-width 0.3s; /* Add transition for smooth resizing */
     }
 }
@@ -430,7 +463,7 @@ ol {
 }
 
 .hero-section .hero-text span {
-    font-size: 16px;
+    font-size: 15px;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -526,7 +559,35 @@ ol {
     .custom-item p {
         font-size: 12px; /* Decrease font size */
     }
-
+	
+	@media (max-width: px) {
+		.hero-text {
+			padding-top: 10px; /* Adjust padding as needed */
+		}
+	
+		.hero-text span {
+			font-size: 12px; /* Decrease font size */
+		}
+		.hero-section .hero-text span{
+			font-size: 10px; /* Decrease font size */
+		}
+	
+		.hero-text h2 {
+			font-size: 26px; /* Decrease font size */
+			line-height: 5px; /* Decrease line height */
+			margin-top: 5px; /* Adjust margin */
+			margin-bottom: 5px; /* Adjust margin */
+			
+		}
+	
+		.hero-text span[style="color: black; font-weight: 600;"] {
+			font-size: 9px; /* Decrease font size */
+		}
+	
+		.hero-text .primary-btn {
+			font-size: 10px; /* Decrease font size */
+		}
+	}
 
 	/* Adjust styles for smaller screens */
 @media (max-width: 767px) {
@@ -550,7 +611,7 @@ ol {
     }
 
     .hero-text span[style="color: black; font-weight: 600;"] {
-        font-size: 10px; /* Decrease font size */
+        font-size: 9px; /* Decrease font size */
     }
 
     .hero-text .primary-btn {
@@ -559,7 +620,7 @@ ol {
 }
 
 }
-@media (max-width: 408px) {
+@media (max-width: 445px) {
     .hero-text {
         padding-top: 8px; /* Adjust padding as needed */
     }
@@ -568,7 +629,7 @@ ol {
         font-size: 8px; /* Decrease font size */
     }
 	.hero-section .hero-text span{
-		font-size: 10px; /* Decrease font size */
+		font-size: 7px; /* Decrease font size */
 	}
 
     .hero-text h2 {
@@ -1366,7 +1427,7 @@ ol {
 
 .breadcrumb-text .bt-option a {
 	font-size: 18px;
-	color: #7b0006;
+	color: #424242;
 	display: inline-block;
 	margin-right: 25px;
 	position: relative;
@@ -1382,7 +1443,7 @@ ol {
 
 .breadcrumb-text .bt-option span {
 	display: inline-block;
-	color: #9b0d14;
+	color: #424242;
 }
 
 /*---------------------
@@ -2556,8 +2617,8 @@ ol {
 	}
 	.bh-text h2,
 	.hero-section .hero-text h2 {
-		font-size: 40px;
-		line-height: normal;
+		font-size: 35px;
+		line-height: 20px;
 	}
 	.counter-section .cd-timer .cd-item {
 		margin-right: 10px;
@@ -2580,8 +2641,10 @@ ol {
 @media only screen and (max-width: 479px) {
 	.bh-text h2,
 	.hero-section .hero-text h2 {
-		font-size: 36px;
-		line-height: normal;
+		font-size: 24px;
+		line-height: 8px;
+		padding-top: 0px;
+
 	}
 	.newslatter-inner {
 		padding: 60px 20px 48px;
