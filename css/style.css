@@ -689,7 +689,7 @@ ol {
 .ha-text-a p {
 	margin-bottom: 21px;
 	margin-left: 80px;
-	margin-right: 55px;
+	margin-right: 50px;
 }
 
 .ha-text ul {
@@ -3278,7 +3278,7 @@ a {
   }
   
   .count, .plus {
-    font-size: 36px;
+    font-size: 26px;
     font-weight: bold;
     color: #fff;
     margin-right: 10px;
