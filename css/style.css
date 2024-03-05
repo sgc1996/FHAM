@@ -221,6 +221,30 @@ ol {
 	color: white;
 
 }
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .secondary-btn {
+        font-size: 14px;
+        padding: 10px 30px;
+    }
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 400px) {
+    .secondary-btn {
+        font-size: 12px;
+        padding: 8px 20px;
+    }
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 320px) {
+    .secondary-btn {
+        font-size: 10px;
+        padding: 8px 20px;
+    }
+}
+
+
 .down-btn {
 	display: initial;
 	font-size: 25px;
@@ -238,6 +262,34 @@ ol {
 
 }
 
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .down-btn {
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 400px) {
+    .down-btn {
+        font-size: 18px;
+        padding: 8px 20px;
+    }
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 320px) {
+    .down-btn {
+        font-size: 15px;
+        padding: 8px 20px;
+    }
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 270px) {
+    .down-btn {
+        font-size: 10px;
+        padding: 8px 20px;
+    }
+}
 /* Preloder */
 
 #preloder {
@@ -763,6 +815,13 @@ ol {
 	margin-bottom: 21px;
 	margin-left: 80px;
 	margin-right: 50px;
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 991px) {
+    .ha-text-a p {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
 .ha-text ul {
@@ -2529,7 +2588,9 @@ ol {
 @media only screen and (max-width: 991px) {
 	.schedule-tab .st-content .sc-pic {
 		text-align: left;
-		padding: 30px 0 0;
+		padding: 0px 0 0;
+		margin-left: 31%;
+
 	}
 	.schedule-tab .st-content .sc-text {
 		padding: 30px 0 0;
@@ -2624,6 +2685,13 @@ ol {
 /* Large Mobile: 480px */
 
 @media only screen and (max-width: 767px) {
+
+	.schedule-tab .st-content .sc-pic {
+		text-align: left;
+		padding: 0px 0 0;
+		margin-left: 27%;
+
+	}
 	.counter-section .cd-timer .cd-item {
 		margin-bottom: 10px;
 	}
@@ -2717,8 +2785,28 @@ ol {
 }
 
 /* Small Mobile: 320px */
+@media only screen and (max-width: 600px) {
+
+	.schedule-tab .st-content .sc-pic {
+		text-align: left;
+		padding: 0px 0 0;
+		margin-left: 20%;
+		margin-right: 20%;
+
+	}
+}
+
 
 @media only screen and (max-width: 479px) {
+
+	.schedule-tab .st-content .sc-pic {
+		text-align: left;
+		padding: 0px 0 0;
+		margin-left: 10%;
+		margin-right: 10%;
+
+	}
+
 	.bh-text h2,
 	.hero-section .hero-text h2 {
 		font-size: 24px;
@@ -2770,6 +2858,19 @@ ol {
 		margin-left: 5px;
 	}
 }
+
+
+/* Small Mobile: 360px */
+@media only screen and (max-width: 360px) {
+
+	.schedule-tab .st-content .sc-pic {
+		text-align: left;
+		padding: 0px 0 0;
+	
+
+	}
+}
+
 /* tabs section */
 @media (max-width: 768px) {
     .schedule-tab .nav-tabs {
