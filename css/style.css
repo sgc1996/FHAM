@@ -132,6 +132,11 @@ ol {
 	margin-bottom: 0;
 }
 
+.section-title-1 {
+	text-align: center;
+	margin-bottom: 52px;
+}
+
 .set-bg {
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -559,6 +564,9 @@ ol {
     .custom-item p {
         font-size: 12px; /* Decrease font size */
     }
+	.section-title-1 h3{
+		font-size: 18px;
+	}
 	
 	@media (max-width: px) {
 		.hero-text {
@@ -646,6 +654,34 @@ ol {
 
     .hero-text .primary-btn {
         font-size: 8px; /* Decrease font size */
+    }
+}
+@media (max-width: 390px) {
+    .hero-text {
+        padding-top: 8px; /* Adjust padding as needed */
+    }
+
+    .hero-text span {
+        font-size: 7px; /* Decrease font size */
+    }
+	.hero-section .hero-text span{
+		font-size: 6px; /* Decrease font size */
+	}
+
+    .hero-text h2 {
+        font-size: 12px; /* Decrease font size */
+        line-height: 10px; /* Decrease line height */
+        margin-top: 9px; /* Adjust margin */
+        margin-bottom: 7px; /* Adjust margin */
+		padding-top: 30px;
+    }
+
+    .hero-text span[style="color: black; font-weight: 400;"] {
+        font-size: 7px; /* Decrease font size */
+    }
+
+    .hero-text .primary-btn {
+        font-size: 7px; /* Decrease font size */
     }
 }
 
@@ -2682,7 +2718,7 @@ ol {
 	}
 	.cc-text {
 		padding-left: 30px;
-		padding-top: 35px;
+		padding-top: 80px;
 	}
 	.story-item h2 {
 		float: none;
@@ -3124,7 +3160,7 @@ a {
 		  width: 40px;
 		  height: 40px;
 		  bottom: 107px;
-		  right: 52px;
+		  right: 15px;
 		  font-size: 22px;
 	  }
   }
@@ -3135,7 +3171,7 @@ a {
 	display: none;
 	position: fixed;
 	bottom: 30px;
-	right: 45px;
+	right: 50px;
 	background-color: #9b0d14;
 	color: #fff;
 	width: 50px;
@@ -3146,7 +3182,14 @@ a {
 	font-size: 24px;
 	cursor: pointer;
 	z-index: 1000;
+	
 }
+@media (max-width: 767px) {
+	#back-to-top {
+		right: 10px; /* Adjusted value for right */
+	}
+}
+
 .con-info ul li {
     text-indent: -15px; /* Adjust the value as needed */
     padding-left: 30px; /* Adjust the value to match the indent */
