@@ -461,6 +461,7 @@ ol {
     justify-content: center;
     align-items: center;
     text-align: center;
+	height: 640px;
 }
 
 .hero-section .hero-text {
@@ -544,6 +545,9 @@ ol {
 
 /* Adjust styles for smaller screens */
 @media (max-width: 767px) {
+	.hero-section{
+		height: auto;
+	}
     .custom-counter-section {
         padding: 20px 0; /* Decrease padding */
     }
