@@ -3385,3 +3385,9 @@ a {
 	animation-delay:0s;
 	-webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
+
+@media (max-width: 550px) {
+    .breadcrumb-text h2 {
+        font-size: 30px; /* Adjusted font size for smaller screens */
+    }
+}
