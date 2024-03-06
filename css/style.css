@@ -496,9 +496,15 @@ ol {
 .scrolled .logo img {
     max-width: 150px; /* Reduce the maximum width when scrolled */
 }
+@media (max-width: 1200px) {
+    .logo img {
+		max-width: 160px; /* Set maximum width for the logo */
+		transition: max-width 0.3s; /* Add transition for smooth resizing */
+    }
+}
 @media (max-width: 1024px) {
     .logo img {
-		max-width: 200px; /* Set maximum width for the logo */
+		max-width: 160px; /* Set maximum width for the logo */
 		transition: max-width 0.3s; /* Add transition for smooth resizing */
     }
 }
@@ -629,7 +635,7 @@ ol {
 }
 
 /* Adjust styles for smaller screens */
-@media (max-width: 767px) {
+@media (max-width: 990px) {
 	.hero-section{
 		height: auto;
 	}
@@ -655,6 +661,9 @@ ol {
     }
 	.section-title-1 h3{
 		font-size: 18px;
+	}
+	.col-lg-8.offset-lg-4 {
+		margin-left: 20%;
 	}
 	
 	@media (max-width: px) {
@@ -714,7 +723,11 @@ ol {
     .hero-text .primary-btn {
         font-size: 10px; /* Decrease font size */
     }
+	.col-lg-8.offset-lg-4 {
+		margin-left: 10%;
+	}
 }
+
 
 }
 @media (max-width: 445px) {
@@ -744,6 +757,9 @@ ol {
     .hero-text .primary-btn {
         font-size: 8px; /* Decrease font size */
     }
+	.col-lg-8.offset-lg-4 {
+		margin-left: 5%;
+	}
 }
 @media (max-width: 390px) {
     .hero-text {
@@ -2418,8 +2434,8 @@ ol {
 }
 
 .cc-text {
-	height: 580px;
-	margin-left: -15px;
+	height: 615px;
+	margin-left: -16px;
 	margin-right: -15px;
 	padding-top: 150px;
 }
@@ -3408,9 +3424,11 @@ a {
 }
 
 
-.partner-logo-1 .pl-table {
+.partner-logo-1 .owl-carousel .pl-table {
     display: inline-block;
     text-align: center;
+    width: auto; /* Adjust this value as needed */
+    margin-right: 5px; /* Adjust this value to reduce the gap */
 }
 
 .partner-logo-1 .pl-table .pl-tablecell {
@@ -3432,7 +3450,7 @@ a {
 /*Owl crousal image*/
 .partner-logo.owl-carousel img {
     /* Your styles here */
-    width: 50%; /* Example width */
+    width: 35%; /* Example width */
    margin-left: 90px;
 }
 
@@ -3476,7 +3494,6 @@ a {
   .arrows {
 	width: 60px;
 	height: 72px;
-	position: absolute;
 	left: 50%;
 	margin-left: -30px;
 	bottom: 20px;
@@ -3526,5 +3543,9 @@ a {
         font-size: 30px; /* Adjusted font size for smaller screens */
     }
 }
-
-/*Download Buton */
+/*cintact margin-left*/
+@media only screen and (min-width: 990px) {
+	.col-lg-8.offset-lg-4 {
+		margin-left: 20%;
+	}
+}

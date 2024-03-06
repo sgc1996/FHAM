@@ -54,6 +54,9 @@
             },
             992: {
                 items: 3
+            },
+            1200: {
+                items: 4
             }
         }
     });
@@ -64,7 +67,7 @@
         autoplay: true,
         loop: true,
         smartSpeed: 1200,
-        margin: 116,
+        margin: 0, // Adjust this value to reduce the gap
         responsive: {
             320: {
                 items: 2,
@@ -79,7 +82,7 @@
                 items: 5,
             },
             1200: {
-                items: 6
+                items: 8 // Set 8 items for viewport width >= 1200px
             }
         }
     });
