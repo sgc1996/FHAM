@@ -159,22 +159,33 @@
     });
 });
 
- // Script to show/hide back to top button based on scroll position
- window.onscroll = function() {scrollFunction()};
+// Function to control the display of back to top button
+window.onscroll = function() {scrollFunction()};
 
- function scrollFunction() {
-     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-         document.getElementById("back-to-top").style.display = "block";
-     } else {
-         document.getElementById("back-to-top").style.display = "none";
-     }
- }
+function scrollFunction() {
+    var backToTopButton = document.getElementById("back-to-top");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+}
 
- // Script to scroll back to top when button is clicked
- document.getElementById("back-to-top").addEventListener("click", function() {
-     document.body.scrollTop = 0; // For Safari
-     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
- });
+// Function to scroll back to top when button is clicked
+document.getElementById("back-to-top").addEventListener("click", function() {
+    scrollToTop(1000); // 1000 milliseconds (1 second) for smooth scrolling
+});
+
+// Smooth scrolling function
+function scrollToTop(scrollDuration) {
+    var scrollStep = -window.scrollY / (scrollDuration / 15);
+    var scrollInterval = setInterval(function(){
+        if (window.scrollY !== 0) {
+            window.scrollBy(0, scrollStep);
+        }
+        else clearInterval(scrollInterval);
+    },15);
+}
 
  // Logo scrling reduce
 // JavaScript
