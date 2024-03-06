@@ -120,7 +120,7 @@ ol {
 }
 
 .section-title h2 {
-	font-size: 40px;
+	font-size: 35px;
 	font-weight: 700;
 	color: #171822;
 	margin-bottom: 10px;
@@ -479,6 +479,11 @@ ol {
 .nav-menu .primary-btn.top-btn {
     margin: 27px 0;
 }
+@media screen and (max-width: 1200px) {
+    .nav-menu .primary-btn.top-btn {
+        font-size: 12px;
+    }
+}
 
 .slicknav_menu {
     display: none;
@@ -535,6 +540,7 @@ ol {
 		max-width: fit-content; /* Set maximum width for the logo */
 		transition: max-width 0.3s; /* Add transition for smooth resizing */
     }
+	
 }
 @media (max-width: 767px) {
     .container {
@@ -2564,7 +2570,7 @@ ol {
 
 @media only screen and (min-width: 1200px) {
 	.container {
-		max-width: 1170px;
+		max-width: 1250px;
 	}
 }
 
