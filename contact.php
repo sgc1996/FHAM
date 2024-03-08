@@ -95,11 +95,29 @@ $message = '
     gtag('config', 'G-HP8R7D199R');
     </script>
     <meta charset="UTF-8">
-    <meta name="description" content="FHAM Official Website">
-    <meta name="keywords" content="FHAM, unica, creative, html">
+    <!-- Meta Description -->
+    <meta name="description" content="Contact Dhivehi Expo Services (Pvt) Ltd for inquiries or information about the Food and Hospitality Asia Maldives event. Reach out to our offices in Maldives and Sri Lanka for assistance with the Culinary Challenge, Barista Challenge, Mocktail Challenge, and Housekeeping Challenge.">
+
+    <!-- Keywords -->
+    <meta name="keywords" content="FHAM Contact, Contact Dhivehi Expo Services, FHAM Inquiries, Culinary Challenge Contact, Barista Challenge Contact, Mocktail Challenge Contact, Housekeeping Challenge Contact, Dhivehi Expo Services Maldives, CDC Events and Travels Sri Lanka">
+
+    <!-- Open Graph (Facebook) -->
+    <meta property="og:title" content="Contact Dhivehi Expo Services - Food and Hospitality Asia Maldives">
+    <meta property="og:description" content="Contact Dhivehi Expo Services (Pvt) Ltd for inquiries or information about the Food and Hospitality Asia Maldives event. Reach out to our offices in Maldives and Sri Lanka for assistance with the Culinary Challenge, Barista Challenge, Mocktail Challenge, and Housekeeping Challenge.">
+    <meta property="og:image" content="https://fhamaldives.com/img/logo.png">
+    <meta property="og:url" content="https://fhamaldives.com/contact.php">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FHAM 2024 - Food and Hospitality Asia Maldives">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Dhivehi Expo Services - Food and Hospitality Asia Maldives">
+    <meta name="twitter:description" content="Contact Dhivehi Expo Services (Pvt) Ltd for inquiries or information about the Food and Hospitality Asia Maldives event. Reach out to our offices in Maldives and Sri Lanka for assistance with the Culinary Challenge, Barista Challenge, Mocktail Challenge, and Housekeeping Challenge.">
+    <meta name="twitter:image" content="https://fhamaldives.com/img/logo.png">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FHAM 2024</title>
+    <title>FHAM 2024 - Contact Us</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
