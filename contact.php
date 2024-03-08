@@ -1,3 +1,86 @@
+<?php
+//index.php
+ use PHPMailer\PHPMailer\PHPMailer;
+ use PHPMailer\PHPMailer\SMTP;
+ use PHPMailer\PHPMailer\Exception;
+
+function clean_text($string)
+{
+ $string = trim($string);
+ $string = stripslashes($string);
+ $string = htmlspecialchars($string);
+ return $string;
+}
+
+error_reporting(0);
+$msg='';
+
+if (isset($_POST['submit'])) {
+$message = '
+  <h3 align="center">Sender Details</h3>
+  <table border="1" width="100%" cellpadding="5" cellspacing="5">
+   <tr>
+    <td width="30%">Name</td>
+    <td width="70%">'.$_POST["name"].'</td>
+   </tr>
+   <tr>
+    <td width="30%">Email Address</td>
+    <td width="70%">'.$_POST["email"].'</td>
+   </tr>
+   <tr>
+    <td width="30%">Message</td>
+    <td width="70%">'.$_POST["message"].'</td>
+   </tr>
+  </table>
+ ';
+
+
+   $secretKey = "6LePwJEpAAAAABtpfBUuwABTI4RkahGG4aPYzCxg";
+   $responseKey = $_POST['g-recaptcha-response'];
+
+   $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey";
+
+   $response = file_get_contents($url);
+   $response = json_decode($response);
+
+    require 'phpmailer/src/Exception.php';
+    require 'phpmailer/src/PHPMailer.php';
+    require 'phpmailer/src/SMTP.php';
+    $mail = new PHPMailer;
+    $mail->IsSMTP();        //Sets Mailer to send message using SMTP
+    $mail->Host = 'mail.sancharakaudawa.com';  //Sets the SMTP hosts of your Email hosting, this for Godaddy
+    $mail->Port = '465';        //Sets the default SMTP server port
+    $mail->SMTPAuth = true;       //Sets SMTP authentication. Utilizes the Username and Password variables
+    $mail->Username = 'webform@sancharakaudawa.com';     //Sets SMTP username
+    $mail->Password = '3DsYeTJBZD89sf7';     //Sets SMTP password
+    $mail->SMTPSecure = 'ssl';       //Sets connection prefix. Options are "", "ssl" or "tls"
+    $mail->From = $_POST["email"];     //Sets the From email address for the message
+    $mail->FromName = $_POST["name"];    //Sets the From name of the message
+    //$mail->AddAddress('contact@itechs.lk', 'Iceman Technical Solutions'); //Adds a "To" address
+    $mail->AddAddress('gayanc@aitech.lk', 'FHAM 2024'); //Adds a "To" address
+    //$mail->AddAddress('gayanchathuranga1992@gmail.com', 'Iceman Technical Solutions'); //Adds a "To" address
+    //$mail->AddAddress('ameshm@aitech.lk', 'Iceman Technical Solutions'); //Adds a "To" address
+    $mail->WordWrap = 50;       //Sets word wrapping on the body of the message to a given number of characters
+    $mail->IsHTML(true);       //Sets message type to HTML
+    // $mail->AddAttachment($path);     //Adds an attachment from a path on the filesystem
+    $mail->Subject = $_POST["subject"];    //Sets the Subject of the message
+    $mail->Body = $message;       //An HTML or plain text message body
+
+   if ($response->success) {
+      if ($mail->Send()) {
+         $msg='<div class="alert alert-success" style="text-align: center;">Email Sent Successfully</div>';
+      }
+      else{
+         $msg='<div class="alert alert-danger" style="text-align: center;">Failed to send the message</div>';
+      }
+   }
+   else{
+      $msg='<div class="alert alert-danger" style="text-align: center;">Verification failed</div>';
+   }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -18,8 +101,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FHAM 2024</title>
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900&display=swap"
@@ -35,6 +118,8 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -70,7 +155,7 @@
                             </ul>
                         </li>
                         <li><a href="gallery.html" >Gallery</a></li>
-                        <li><a href="./contact.html" style="color: #0072ad;">Contacts</a></li>
+                        <li><a href="./contact.php" style="color: #0072ad;">Contacts</a></li>
                     </ul>
                 </nav>
                <a href="https://fhamaldives.com/form-db/" class="primary-btn top-btn" style="color: aliceblue;"  target="_blank"><i class="fa fa-ticket"></i> RESERVE STALLS</a>
@@ -148,7 +233,7 @@
                   <div class="col-lg-4">
                     <div class="cc-text set-bg" data-setbg="img/contact-content-3.jpg">
                         <div class="row">
-                            <div class="col-lg-8 offset-lg-4"  ">
+                            <div class="col-lg-8 offset-lg-4">
                                 <div class="section-title">
                                     <h2 style="color: #fff; margin-bottom: 20px; text-align: left;">For Inquiries</h2>
                                     <div class="contact-info" style="text-align: left;">
@@ -191,6 +276,7 @@
 
     <!-- Contact Form Section Begin -->
     <section class="contact-from-section spad">
+    <?php print_r($msg); ?>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -202,21 +288,41 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form action="#" class="comment-form contact-form">
+                    <form class="comment-form contact-form" action="<?= $SERVER['PHP_SELF'] ?>" method="post" role="form">
                         <div class="row">
-                            <div class="col-lg-4">
-                                <input type="text" placeholder="Name">
+
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" placeholder="Your Email" name="email" required>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" placeholder="Subject" name="subject" required>
+                        </div>
+                        <div class="col-lg-12">
+                            <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <div class="g-recaptcha" data-sitekey="6LePwJEpAAAAACskXQUSTDJEFLGHXyxMfFXrsCzf"></div>
+                        </div>
+                        <div class="col-lg-12">
+                            <button type="submit" class="site-btn" name="submit">Send Message</button>
+                        </div>
+
+                            <!-- <div class="col-lg-4">
+                                <input type="text" name="name" placeholder="Name">
                             </div>
                             <div class="col-lg-4">
-                                <input type="text" placeholder="Email">
+                                <input type="mail" name="email" placeholder="Email">
                             </div>
                             <div class="col-lg-4">
-                                <input type="text" placeholder="Phone">
+                                <input type="text" name="subject" placeholder="Subject">
                             </div>
                             <div class="col-lg-12 text-center">
-                                <textarea placeholder="Messages"></textarea>
+                                <textarea name="message" placeholder="Messages"></textarea>
                                 <button type="submit" class="site-btn">Send Message</button>
-                            </div>
+                            </div> -->
                         </div>
                     </form>
                 </div>
