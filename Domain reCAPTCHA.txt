@@ -1,0 +1,10 @@
+Domain reCAPTCHA
+
+Site Key: 6LdUyZEpAAAAADKtAglHFevX1_kzfP0oKouifAYo
+Secret Key: 6LdUyZEpAAAAAIls9Z0wBEKE8drQVH3H90vfphuV
+
+Localhost reCAPTCHA
+
+Site Key: 6LePwJEpAAAAACskXQUSTDJEFLGHXyxMfFXrsCzf
+Secret Key: 6LePwJEpAAAAABtpfBUuwABTI4RkahGG4aPYzCxg
+
