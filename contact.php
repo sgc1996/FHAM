@@ -1,82 +1,79 @@
 <?php
-//index.php
- use PHPMailer\PHPMailer\PHPMailer;
- use PHPMailer\PHPMailer\SMTP;
- use PHPMailer\PHPMailer\Exception;
-
-function clean_text($string)
-{
- $string = trim($string);
- $string = stripslashes($string);
- $string = htmlspecialchars($string);
- return $string;
-}
-
-error_reporting(0);
-$msg='';
-
+// include autoloader
+// Import PHPMailer classes into the global namespace
+// These must be at the top of your script, not inside a function
+require_once 'PHPMailer/src/Exception.php';
+require_once 'PHPMailer/src/PHPMailer.php';
+require_once 'PHPMailer/src/SMTP.php';
+// reference the Dompdf namespace
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+            
 if (isset($_POST['submit'])) {
-$message = '
-  <h3 align="center">Sender Details</h3>
-  <table border="1" width="100%" cellpadding="5" cellspacing="5">
-   <tr>
-    <td width="30%">Name</td>
-    <td width="70%">'.$_POST["name"].'</td>
-   </tr>
-   <tr>
-    <td width="30%">Email Address</td>
-    <td width="70%">'.$_POST["email"].'</td>
-   </tr>
-   <tr>
-    <td width="30%">Message</td>
-    <td width="70%">'.$_POST["message"].'</td>
-   </tr>
-  </table>
- ';
+            $data = $_POST;
+
+            $mail = new PHPMailer(true);
+
+            //Server settings
+            $mail->isSMTP();
+            $mail->Host = 'mail.sancharakaudawa.com';
+            $mail->SMTPAuth = true;
+            $mail->Username = 'webform@sancharakaudawa.com';
+            $mail->Password = '3DsYeTJBZD89sf7';
+            $mail->SMTPSecure = 'tls';
+            $mail->Port = 587;
+
+            //Recipient
+            $mail->setFrom('mkt@fhamaldives.com', 'FHAM 2024');
+            $mail->addAddress('mkt@fhamaldives.com', 'FHAM 2024');
+            $mail->addCC('rizwan@cdcevents.net', 'Rizwan Khan');
+            $mail->addBCC('ameshm@aitech.lk', 'FHAM 2024');
+            $mail->addBCC('gayanc@aitech.lk', 'FHAM 2024');
+
+            //Content
+            $mail->isHTML(true);
+            $mail->Subject = 'FHAM 2024 - Inquiry - ' . $_POST["subject"];;
+            $emailBody = '
+                <h3 align="center">Sender Details</h3>
+                <table border="1" width="100%" cellpadding="5" cellspacing="5">
+                    <tr>
+                    <td width="30%">Name</td>
+                    <td width="70%">'.$_POST["name"].'</td>
+                    </tr>
+                    <tr>
+                    <td width="30%">Email Address</td>
+                    <td width="70%">'.$_POST["email"].'</td>
+                    </tr>
+                    <tr>
+                    <td width="30%">Message</td>
+                    <td width="70%">'.$_POST["message"].'</td>
+                    </tr>
+                </table>
+            ';
+
+            $secretKey = "6LdUyZEpAAAAAIls9Z0wBEKE8drQVH3H90vfphuV";
+            $responseKey = $_POST['g-recaptcha-response'];
+
+            $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey";
+
+            $response = file_get_contents($url);
+            $response = json_decode($response);
+
+            $mail->Body = $emailBody;
 
 
-   $secretKey = "6LePwJEpAAAAABtpfBUuwABTI4RkahGG4aPYzCxg";
-   $responseKey = $_POST['g-recaptcha-response'];
 
-   $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey";
-
-   $response = file_get_contents($url);
-   $response = json_decode($response);
-
-    require 'phpmailer/src/Exception.php';
-    require 'phpmailer/src/PHPMailer.php';
-    require 'phpmailer/src/SMTP.php';
-    $mail = new PHPMailer;
-    $mail->IsSMTP();        //Sets Mailer to send message using SMTP
-    $mail->Host = 'mail.sancharakaudawa.com';  //Sets the SMTP hosts of your Email hosting, this for Godaddy
-    $mail->Port = '465';        //Sets the default SMTP server port
-    $mail->SMTPAuth = true;       //Sets SMTP authentication. Utilizes the Username and Password variables
-    $mail->Username = 'webform@sancharakaudawa.com';     //Sets SMTP username
-    $mail->Password = '3DsYeTJBZD89sf7';     //Sets SMTP password
-    $mail->SMTPSecure = 'ssl';       //Sets connection prefix. Options are "", "ssl" or "tls"
-    $mail->From = $_POST["email"];     //Sets the From email address for the message
-    $mail->FromName = $_POST["name"];    //Sets the From name of the message
-    //$mail->AddAddress('contact@itechs.lk', 'Iceman Technical Solutions'); //Adds a "To" address
-    $mail->AddAddress('gayanc@aitech.lk', 'FHAM 2024'); //Adds a "To" address
-    //$mail->AddAddress('gayanchathuranga1992@gmail.com', 'Iceman Technical Solutions'); //Adds a "To" address
-    //$mail->AddAddress('ameshm@aitech.lk', 'Iceman Technical Solutions'); //Adds a "To" address
-    $mail->WordWrap = 50;       //Sets word wrapping on the body of the message to a given number of characters
-    $mail->IsHTML(true);       //Sets message type to HTML
-    // $mail->AddAttachment($path);     //Adds an attachment from a path on the filesystem
-    $mail->Subject = $_POST["subject"];    //Sets the Subject of the message
-    $mail->Body = $message;       //An HTML or plain text message body
-
-   if ($response->success) {
-      if ($mail->Send()) {
-         $msg='<div class="alert alert-success" style="text-align: center;">Email Sent Successfully</div>';
-      }
-      else{
-         $msg='<div class="alert alert-danger" style="text-align: center;">Failed to send the message</div>';
-      }
-   }
-   else{
-      $msg='<div class="alert alert-danger" style="text-align: center;">Verification failed</div>';
-   }
+            if ($response->success) {
+                if ($mail->Send()) {
+                   $msg='<div class="alert alert-success" style="text-align: center;">Email Sent Successfully</div>';
+                }
+                else{
+                   $msg='<div class="alert alert-danger" style="text-align: center;">Failed to send the message</div>';
+                }
+             }
+             else{
+                $msg='<div class="alert alert-danger" style="text-align: center;">Verification failed</div>';
+             }
 }
 
 ?>
@@ -306,41 +303,26 @@ $message = '
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form class="comment-form contact-form" action="<?= $SERVER['PHP_SELF'] ?>" method="post" role="form">
+                    <form class="comment-form contact-form" method="post" action="">
                         <div class="row">
-
-                        <div class="col-lg-4">
-                            <input type="text" class="form-control" placeholder="Your Name" name="name" required>
-                        </div>
-                        <div class="col-lg-4">
-                            <input type="text" class="form-control" placeholder="Your Email" name="email" required>
-                        </div>
-                        <div class="col-lg-4">
-                            <input type="text" class="form-control" placeholder="Subject" name="subject" required>
-                        </div>
-                        <div class="col-lg-12">
-                            <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
-                        </div>
-                        <div class="col-lg-12 text-center">
-                            <div class="g-recaptcha" data-sitekey="6LePwJEpAAAAACskXQUSTDJEFLGHXyxMfFXrsCzf"></div>
-                        </div>
-                        <div class="col-lg-12">
-                            <button type="submit" class="site-btn" name="submit">Send Message</button>
-                        </div>
-
-                            <!-- <div class="col-lg-4">
-                                <input type="text" name="name" placeholder="Name">
+                            <div class="col-lg-4">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" style="height: 55px;">
                             </div>
                             <div class="col-lg-4">
-                                <input type="mail" name="email" placeholder="Email">
+                                <input type="email" name="email" class="form-control" placeholder="Your Email" style="height: 55px;">
                             </div>
                             <div class="col-lg-4">
-                                <input type="text" name="subject" placeholder="Subject">
+                                <input type="text" name="subject" class="form-control" placeholder="Subject" style="height: 55px;">
+                            </div>
+                            <div class="col-lg-12">
+                                <textarea class="form-control" name="message" rows="4" placeholder="Message"></textarea>
                             </div>
                             <div class="col-lg-12 text-center">
-                                <textarea name="message" placeholder="Messages"></textarea>
-                                <button type="submit" class="site-btn">Send Message</button>
-                            </div> -->
+                                <div class="g-recaptcha" data-sitekey="6LdUyZEpAAAAADKtAglHFevX1_kzfP0oKouifAYo"></div>
+                            </div>
+                            <div class="col-lg-12">
+                                <button class="site-btn" name="submit" type="submit">Send Message</button>
+                            </div>
                         </div>
                     </form>
                 </div>
