@@ -156,23 +156,23 @@ if (isset($_POST['submit'])) {
                 </a>
             </div>
             <div class="nav-menu">
-                <nav class="mainmenu mobile-menu">
-                    <ul>
-                        <li><a href="./index.html" >Home</a></li>
-                        <li><a href="./about-us.html">About</a></li>
-                        <li><a href="Exhibition.html">Exhibition</a></li>
-                        <li><a> challenges</a>
-                            <ul class="dropdown">
-                                <li><a href="Challenge-1.html">Culinary</a></li>
-                                <li><a href="Challenge-3.html">Moktail</a></li>
-                                <li><a href="Challenge-2.html">Barista</a></li>
-                                <li><a href="Challenge-4.html">Housekeeping</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="gallery.html" >Gallery</a></li>
-                        <li><a href="./contact.php" style="color: #0072ad;">Contacts</a></li>
-                    </ul>
-                </nav>
+            <nav class="mainmenu mobile-menu">
+                <ul>
+                    <li><a href="./index.html" >HOME</a></li>
+                    <li><a href="./about-us.html">ABOUT</a></li>
+                    <li><a href="Exhibition.html">EXHIBITION</a></li>
+                    <li><a> CHALLENGES</a>
+                        <ul class="dropdown">
+                            <li><a href="Challenge-1.html" >CULINARY</a></li>
+                            <li><a href="Challenge-3.html" >MOCKTAIL</a></li>
+                            <li><a href="Challenge-2.html">BARISTA</a></li>
+                            <li><a href="Challenge-4.html" >HOUSEKEEPING</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="./contact.php" style="color: #0072ad;">CONATCTS</a></li>
+                </ul>
+            </nav>
                <a href="https://fhamaldives.com/form-db/" class="primary-btn top-btn" style="color: aliceblue;"  target="_blank"><i class="fa fa-ticket"></i> RESERVE STALLS</a>
             </div>
             <div id="mobile-menu-wrap"></div>
