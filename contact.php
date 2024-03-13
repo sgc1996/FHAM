@@ -57,7 +57,7 @@ if (isset($_POST['submit'])) {
                 </table>
             ';
 
-            $secretKey = "6LdUyZEpAAAAAIls9Z0wBEKE8drQVH3H90vfphuV";
+            $secretKey = "6LePwJEpAAAAABtpfBUuwABTI4RkahGG4aPYzCxg";
             $responseKey = $_POST['g-recaptcha-response'];
 
             $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey";
@@ -324,7 +324,7 @@ if (isset($_POST['submit'])) {
                                 <textarea class="form-control" name="message" rows="4" placeholder="Message"></textarea>
                             </div>
                             <div class="col-lg-12 text-center">
-                                <div class="g-recaptcha" data-sitekey="6LdUyZEpAAAAADKtAglHFevX1_kzfP0oKouifAYo"></div>
+                                <div class="g-recaptcha" data-sitekey="6LePwJEpAAAAACskXQUSTDJEFLGHXyxMfFXrsCzf"></div>
                             </div>
                             <div class="col-lg-12">
                                 <button class="site-btn" name="submit" type="submit">Send Message</button>
