@@ -30,10 +30,11 @@ if (isset($_POST['submit'])) {
             //Recipient
             $mail->setFrom($userEmail, $userName);
             // $mail->setFrom('mkt@fhamaldives.com', 'FHAM 2024');
-            $mail->addAddress('mkt@fhamaldives.com', 'FHAM 2024');
-            $mail->addCC('rizwan@cdcevents.net', 'Rizwan Khan');
-            $mail->addBCC('ameshm@aitech.lk', 'FHAM 2024');
-            $mail->addBCC('gayanc@aitech.lk', 'FHAM 2024');
+            $mail->addAddress('gayanc@aitech.lk', 'FHAM 2024');
+            // $mail->addAddress('mkt@fhamaldives.com', 'FHAM 2024');
+            // $mail->addCC('rizwan@cdcevents.net', 'Rizwan Khan');
+            // $mail->addBCC('ameshm@aitech.lk', 'FHAM 2024');
+            // $mail->addBCC('gayanc@aitech.lk', 'FHAM 2024');
 
             //Content
             $mail->isHTML(true);
