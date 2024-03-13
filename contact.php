@@ -10,9 +10,13 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
             
 if (isset($_POST['submit'])) {
-            $data = $_POST;
+            // $data = $_POST;
 
             $mail = new PHPMailer(true);
+            // var_dump($_POST["email"], $_POST["name"]);
+            // exit;
+            $userEmail = $_POST["email"];
+            $userName = $_POST["name"];
 
             //Server settings
             $mail->isSMTP();
@@ -24,7 +28,8 @@ if (isset($_POST['submit'])) {
             $mail->Port = 587;
 
             //Recipient
-            $mail->setFrom('mkt@fhamaldives.com', 'FHAM 2024');
+            $mail->setFrom($userEmail, $userName);
+            // $mail->setFrom('mkt@fhamaldives.com', 'FHAM 2024');
             $mail->addAddress('mkt@fhamaldives.com', 'FHAM 2024');
             $mail->addCC('rizwan@cdcevents.net', 'Rizwan Khan');
             $mail->addBCC('ameshm@aitech.lk', 'FHAM 2024');
