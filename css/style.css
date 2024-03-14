@@ -3556,3 +3556,24 @@ a {
 		margin-left: 20%;
 	}
 }
+
+/*footer co sponsor Section*/
+.cos-section {
+    padding-top: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+    .cos-section {
+        margin-left: -5%;
+    }
+}
+@media screen and (min-width: 1360px) {
+    .cos-section {
+        margin-left: -7%;
+    }
+}
+@media screen and (min-width: 1360px) {
+    .cos-section {
+        margin-left: -10%;
+    }
+}
