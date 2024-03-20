@@ -262,32 +262,33 @@ ol {
     background-size: 200% 100%;
 
 }
+/* Media query for smaller screens */
+@media screen and (max-width: 1200px) {
+    .down-btn {
+        font-size: 10px;
+        padding: 10px 30px;
+    }
+}
 
 /* Media query for smaller screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 991px) {
     .down-btn {
-        font-size: 18px;
+        font-size: 15px;
         padding: 10px 30px;
     }
 }
 /* Media query for smaller screens */
 @media screen and (max-width: 400px) {
     .down-btn {
-        font-size: 18px;
-        padding: 8px 20px;
+        font-size: 12px;
+        padding: 10px 20px;
     }
 }
-/* Media query for smaller screens */
-@media screen and (max-width: 320px) {
-    .down-btn {
-        font-size: 15px;
-        padding: 8px 20px;
-    }
-}
+
 /* Media query for smaller screens */
 @media screen and (max-width: 270px) {
     .down-btn {
-        font-size: 15px;
+        font-size: 12px;
         padding: 8px 20px;
     }
 }
@@ -3564,19 +3565,15 @@ a {
 
 @media screen and (min-width: 1200px) {
     .cos-section {
-        margin-left: -5%;
+        margin-left: -3%;
     }
 }
 @media screen and (min-width: 1360px) {
     .cos-section {
-        margin-left: -7%;
+        margin-left: -4%;
     }
 }
-@media screen and (min-width: 1360px) {
-    .cos-section {
-        margin-left: -10%;
-    }
-}
+
 
 
 /* Sponsors */
