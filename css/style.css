@@ -3780,7 +3780,7 @@ padding-bottom: 20px;
 	}
 }
 /* Media query for screen sizes up to 990px */
-@media screen and (max-width: 7680px) {
+@media screen and (max-width: 768px) {
     .slogan {
         font-size: 12px; /* Decrease font size */
     }
