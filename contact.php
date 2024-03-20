@@ -332,8 +332,8 @@ if (isset($_POST['submit'])) {
     <!-- Contact Form Section End -->
 
      
-<!-- Footer Section Begin -->
-<footer class="footer-section">
+ <!-- Footer Section Begin -->
+ <footer class="footer-section">
     <div class="container" style="max-width: 1500px;">
       
         <div class="row">
@@ -423,69 +423,33 @@ if (isset($_POST['submit'])) {
         </div>
 
          <!-- CoSponsor Section Begin -->
-         <section class="cos-section">
-        <div class="col-lg-12">
-      <div class="row">
-         <!-- First image and paragraph -->
-         <div class="col-lg-4 ">
-            <h5 style="text-align: center; font-weight: bold;  font-size: 12px;">PLATINUM SPONSOR - CULINARY CHALLENGE </h5>
-            <a href="https://www.nestle.com/" target="_blank">
-            <div class="ha-pic-2">
-              <img src="img/partner-logo/foot-co-1.png" style=" min-width: 20%;" alt="">
+         <section class="cos-section" >
+            <div class="sponsors">
+                <div class="sponsors-line align-items-center">
+                    <div class="col-lg-2">
+                  <div class="sponsors-box"><img src="img/partner-logo/Sponsor/co-1.jpg" class="img-fluid" alt=""></div>
+                  </div>
+                  <div class="col-lg-2">
+                  <div class="sponsors-box"><img src="img/partner-logo/Sponsor/co-2.jpg" class="img-fluid" alt=""></div>
+                  </div>
+                  <div class="col-lg-2">
+                  <div class="sponsors-box"><img src="img/partner-logo/Sponsor/co-3.jpg" class="img-fluid" alt=""></div>
+                  </div>
+                  <div class="col-lg-2">
+                  <div class="sponsors-box"><img src="img/partner-logo/Sponsor/co-4.jpg" class="img-fluid" alt=""></div>
+                  </div>
+                  <div class="col-lg-2">
+                  <div class="sponsors-box"><img src="img/partner-logo/Sponsor/co-5.jpg" class="img-fluid" alt=""></div>
+                  </div>
+                </div>
             </div>
-  
-            </a>
-          </div>
-        <!-- First image and paragraph -->
-        <div class="col-lg-2 ">
-          <h5 style="text-align: center; font-weight: bold;  font-size: 12px;">CO - SPOSNOR </h5>
-          <a href="https://www.simdi.com/" target="_blank">
-          <div class="ha-pic-2">
-            <img src="img/partner-logo/co-spo-3.png" style="padding-top: 16px;"  alt="">
-          </div>
-
-          </a>
-        </div>
-  
-        <!-- Second image and paragraph -->
-        <div class="col-lg-2">
-          <h5 style="text-align: center; font-weight: bold; font-size: 12px;">CATEGORY SPONSOR</h5>
-          <a href="https://www.nidro-lanka.com/" target="_blank">
-          <div class="ha-pic-2">
-            <img src="img/partner-logo/co-spo-2.png" style="padding-top: 16px;" alt="">
-          </div>
-
-          </a>
-        </div>
-  
-        <!-- 3rd image and paragraph -->
-        <div class="col-lg-2 ">
-          <h5 style="text-align: center; font-weight: bold;  font-size: 12px;">OFFICIAL HOUSEKEEPING COMPETITION SPONSOR</h5>
-          <a href="https://www.celciusbedding.com/our-locations/" target="_blank">
-          <div class="ha-pic-2">
-            <img src="img/partner-logo/co-spo-1.png" alt="">
-          </div>
-
-          </a>
-        </div>
-  
-        <!-- 4th image and paragraph -->
-        <div class="col-lg-2 ">
-          <h5 style="text-align: center; font-weight: bold;  font-size: 12px;">OFFICIAL BARISTA COMPETITION SPONSOR </h5>
-          <a href="http://www.euromarketingmaldives.com/brands/" target="_blank">
-          <div class="ha-pic-2">
-            <img src="img/partner-logo/foot-co-2.png"  alt="">
-          </div>
-
-        </a>
-        </div>
-      </div>
-  </section>
+        
+        </section>
   <!-- CoSponsor Section End -->
 
        
 
-        <div class="partner-logo-1 owl-carousel" >
+        <div class="partner-logo-1 owl-carousel" style="padding-top: 30px;">
             <a href="https://worldchefs.org/" class="pl-table" target="_blank">
                 <div class="pl-tablecell">
                     <img src="img/partner-logo/partner-1.png" alt="">

@@ -908,14 +908,13 @@
     <!-- Schedule Section End -->
 
 
-  <!-- latest BLog Section Begin -->
-  <section class="latest-blog spad">
+<!-- latest BLog Section Begin -->
+<section class="latest-blog spad">
     <div class="container" style="max-width: 1200px;">
-        
         <div class="row">
             <div class="col-lg-6">
                 <div class="latest-item set-bg large-item" data-setbg="img/blog/blog-vid-1.jpg">
-                    <a href="https://www.youtube.com/watch?v=7W7ATrhae00" class="video-play-button" target="_blank"></a>
+                    <a href="https://www.youtube.com/watch?v=7W7ATrhae00" class="video-play-button" onclick="openPopup(event)"></a>
                 </div>
             </div>
             
@@ -924,16 +923,14 @@
                     <div class="li-tag">WHEN</div>
                     <div class="li-text">
                         <span style="font-size: 20px;"><i class="fa fa-clock-o"></i> 23RD, 24TH, AND 25TH SEPTEMBER </span><br>
-                        <h5><a href="./blog-details.html">Exhibition Dates</a></h5>
-                      
+                        <h5><a>Exhibition Dates</a></h5>
                     </div>
                 </div>
                 <div class="latest-item set-bg" data-setbg="img/blog/location-blog.jpg">
                     <div class="li-tag">WHERE</div>
                     <div class="li-text">
                         <span  style="font-size: 20px;"><i class="fa fa-map-marker"></i> DHARUBAARUGE, MALE, MALDIVES</span><br>
-                        <h5><a href="./blog-details.html">Exhibition Location</a></h5>
-                        
+                        <h5><a>Exhibition Location</a></h5>
                     </div>
                 </div>
             </div>
@@ -941,6 +938,17 @@
     </div>
 </section>
 <!-- latest BLog Section End -->
+
+<!-- Video Popup -->
+<div class="video-popup" id="videoPopup">
+    <div class="video-popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <iframe id="videoIframe" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+
 
     <!-- Gallerey Section Begin -->
     <section class="team-member-section spad" style="padding-bottom: 70px;;">
