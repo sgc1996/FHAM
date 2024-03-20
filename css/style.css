@@ -572,7 +572,7 @@ ol {
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 1px;
-	line-height: 15px;
+	line-height: 25px;
 }
 
 .hero-section .hero-text h2 {
@@ -714,6 +714,7 @@ ol {
     }
 	.hero-section .hero-text span{
 		font-size: 12px; /* Decrease font size */
+		line-height: 15px;
 	}
 
     .hero-text h2 {
