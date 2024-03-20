@@ -256,3 +256,25 @@ function countUp(targetElement, targetValue) {
       }
     }
   });
+
+// Function to open the video popup
+// Function to open the video popup
+function openPopup(event) {
+    event.preventDefault(); // Prevent the default behavior of the anchor tag
+    var videoUrl = event.target.href;
+    var videoId = videoUrl.split('v=')[1];
+    var embedUrl = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
+    
+    var videoContainer = document.getElementById('videoIframe');
+    videoContainer.src = embedUrl;
+    
+    document.getElementById('videoPopup').style.display = 'block';
+}
+
+// Function to close the video popup
+function closePopup() {
+    var videoContainer = document.getElementById('videoIframe');
+    videoContainer.src = ''; // Clear the video source
+    document.getElementById('videoPopup').style.display = 'none';
+}
+
