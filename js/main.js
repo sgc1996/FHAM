@@ -44,19 +44,19 @@
         autoplay: true,
         loop: true,
         smartSpeed: 1200,
-        margin: 0, // Adjust margin as needed
+        margin: 30,
         responsive: {
             0: {
                 items: 1
             },
             768: {
-                items: 2
-            },
-            992: {
                 items: 3
             },
-            1200: {
+            992: {
                 items: 4
+            },
+            1200: {
+                items: 5
             },
             1600: { // Add a new breakpoint for screens wider than 1200 pixels
                 items: 6 // Set the number of items to display
