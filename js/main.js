@@ -39,12 +39,12 @@
 		Partner Slider
     ----------------------- */
     $(".partner-logo").owlCarousel({
-        items: 3,
+        items: 6,
         dots: false,
         autoplay: true,
         loop: true,
         smartSpeed: 1200,
-        margin: 30, // Adjust margin as needed
+        margin: 0, // Adjust margin as needed
         responsive: {
             0: {
                 items: 1
@@ -59,18 +59,18 @@
                 items: 4
             },
             1600: { // Add a new breakpoint for screens wider than 1200 pixels
-                items: 5 // Set the number of items to display
+                items: 6 // Set the number of items to display
             }
         }
     });
 
     $(".partner-logo-1").owlCarousel({
-        items: 6,
+        items: 8,
         dots: false,
         autoplay: true,
         loop: true,
         smartSpeed: 1200,
-        margin: 0, // Adjust this value to reduce the gap
+        margin: 30, // Adjust this value to reduce the gap
         responsive: {
             320: {
                 items: 2,

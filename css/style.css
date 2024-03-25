@@ -1581,6 +1581,7 @@ ol {
 	color: #171822;
 	font-weight: 600;
 	margin-bottom: 14px;
+	padding-top: 3%;
 }
 
 .breadcrumb-text .bt-option a {
@@ -3455,7 +3456,7 @@ a {
 /*Owl crousal image*/
 .partner-logo.owl-carousel img {
     /* Your styles here */
-    width: 90%; /* Example width */
+    width: 75%; /* Example width */
    margin-left: 0px;
 }
 
@@ -3765,7 +3766,9 @@ width: max-content;
 .herodate {
 	font-weight: 400;
 	line-height: 20px;
+	padding-bottom: 2%;
 	font-size: 23px;
+	
 	
 	}
 /* Media query for screen sizes up to 990px */
