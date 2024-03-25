@@ -3815,3 +3815,78 @@ width: max-content;
     display: block; /* Ensure the iframe takes full width */
     margin: 0 auto; /* Center the iframe */
 }
+
+
+
+
+/*pop up Gallery */
+.container.gallery-container {
+	background-color: #fff;
+	color: #35373a;
+	min-height: 100vh;
+	padding: 30px 50px;
+}
+
+.gallery-container h1 {
+	text-align: center;
+	margin-top: 50px;
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: bold;
+}
+
+.gallery-container p.page-description {
+	text-align: center;
+	margin: 25px auto;
+	font-size: 18px;
+	color: #999;
+}
+
+.tz-gallery {
+	padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+	width: 100%;
+	border-radius: 0;
+	position: relative;
+}
+
+
+.baguetteBox-button {
+	background-color: transparent !important;
+}
+
+/* Apply hover effect to images in the gallery */
+.tz-gallery .lightbox:hover img {
+    transform: scale(1.1) !important;
+    transition: transform 0.3s ease !important;
+}
+
+
+@media(max-width: 768px) {
+	body {
+		padding: 0;
+	}
+}
+.member-item.set-bg {
+    position: relative;
+}
+
+.member-item.set-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency by changing the alpha value */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.member-item.set-bg:hover::before {
+    opacity: 1;
+}
+
+
+
