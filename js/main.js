@@ -57,6 +57,9 @@
             },
             1200: {
                 items: 4
+            },
+            1600: { // Add a new breakpoint for screens wider than 1200 pixels
+                items: 5 // Set the number of items to display
             }
         }
     });
