@@ -427,19 +427,19 @@ if (isset($_POST['submit'])) {
             <div class="sponsors">
                 <div class="sponsors-line align-items-center">
                     <div class="col-lg-2">
-                  <div class="sponsors-box"><img src="img/partner-logo/Sponsor/co-1.jpg" class="img-fluid" alt=""></div>
+                  <div class="sponsors-box"><img src="img/partner-logo/Sponsor/1.jpg" class="img-fluid" alt=""></div>
                   </div>
                   <div class="col-lg-2">
-                  <div class="sponsors-box"><img src="img/partner-logo/Sponsor/co-2.jpg" class="img-fluid" alt=""></div>
+                  <div class="sponsors-box"><img src="img/partner-logo/Sponsor/2.jpg" class="img-fluid" alt=""></div>
                   </div>
                   <div class="col-lg-2">
-                  <div class="sponsors-box"><img src="img/partner-logo/Sponsor/co-3.jpg" class="img-fluid" alt=""></div>
+                  <div class="sponsors-box"><img src="img/partner-logo/Sponsor/3.jpg" class="img-fluid" alt=""></div>
                   </div>
                   <div class="col-lg-2">
-                  <div class="sponsors-box"><img src="img/partner-logo/Sponsor/co-4.jpg" class="img-fluid" alt=""></div>
+                  <div class="sponsors-box"><img src="img/partner-logo/Sponsor/4.jpg" class="img-fluid" alt=""></div>
                   </div>
                   <div class="col-lg-2">
-                  <div class="sponsors-box"><img src="img/partner-logo/Sponsor/co-5.jpg" class="img-fluid" alt=""></div>
+                  <div class="sponsors-box"><img src="img/partner-logo/Sponsor/5.jpg" class="img-fluid" alt=""></div>
                   </div>
                 </div>
             </div>
