@@ -439,13 +439,13 @@ if (isset($_POST['submit'])) {
                   <div class="sponsors-box"><img src="img/partner-logo/Sponsor/2.jpg" class="img-fluid" alt=""></div>
                   </div>
                   <div class="col-lg-2">
-                  <div class="sponsors-box"><img src="img/partner-logo/Sponsor/3.jpg" class="img-fluid" alt=""></div>
-                  </div>
-                  <div class="col-lg-2">
-                  <div class="sponsors-box"><img src="img/partner-logo/Sponsor/4.jpg" class="img-fluid" alt=""></div>
-                  </div>
-                  <div class="col-lg-2">
                   <div class="sponsors-box"><img src="img/partner-logo/Sponsor/5.jpg" class="img-fluid" alt=""></div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="sponsors-box"><img src="img/partner-logo/Sponsor/4.jpg" class="img-fluid" alt=""></div>
+                    </div>
+                  <div class="col-lg-2">
+                  <div class="sponsors-box"><img src="img/partner-logo/Sponsor/6.jpg" class="img-fluid" alt=""></div>
                   </div>
                 </div>
             </div>
