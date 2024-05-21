@@ -3579,10 +3579,15 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+	text-align: center;
   }
   
   .sponsors-box {
 	margin: 15px;
+  }
+
+  .sponsors-box img {
+	width: 68%;
   }
 
   /*--------------------------------------------------------------
