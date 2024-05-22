@@ -338,8 +338,8 @@ if (isset($_POST['submit'])) {
     <!-- Contact Form Section End -->
 
      
- <!-- Footer Section Begin -->
- <footer class="footer-section">
+<!-- Footer Section Begin -->
+<footer class="footer-section">
     <div class="container" style="max-width: 1500px;">
       
         <div class="row">
@@ -497,7 +497,7 @@ if (isset($_POST['submit'])) {
 
     </div>
 </footer>
-    <!-- Footer Section End -->
+<!-- Footer Section End -->
     
 <div id="back-to-top">↑</div>
 
