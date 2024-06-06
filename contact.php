@@ -176,7 +176,7 @@ if (isset($_POST['submit'])) {
                         </ul>
                     </li>
                     <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="./contact.php" style="color: #0072ad;">CONATCTS</a></li>
+                    <li><a href="./contact.php" style="color: #0072ad;">CONTACT</a></li>
                 </ul>
             </nav>
                <a href="https://fhamaldives.com/form-db/" class="primary-btn top-btn" style="color: aliceblue;"  target="_blank"><i class="fa fa-ticket"></i> RESERVE STALLS</a>
