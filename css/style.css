@@ -3771,8 +3771,9 @@ width: max-content;
 .herodate {
 	font-weight: 400;
 	line-height: 20px;
-	padding-bottom: 2%;
 	font-size: 23px;
+	padding-top: 2%;
+	padding-bottom: 1%;
 	
 	
 	}
@@ -3791,6 +3792,32 @@ width: max-content;
         font-size: 12px; /* Decrease font size */
     }
 	.herodate {
+		font-size: 12px; /* Decrease font size */
+	}
+}
+
+.herodate2 {
+	font-weight: 400;
+	line-height: 20px;
+	font-size: 23px;
+	
+	
+	}
+/* Media query for screen sizes up to 990px */
+@media screen and (max-width: 990px) {
+    .slogan {
+        font-size: 15px; /* Decrease font size */
+    }
+	.herodate2 {
+		font-size: 15px; /* Decrease font size */
+	}
+}
+/* Media query for screen sizes up to 990px */
+@media screen and (max-width: 768px) {
+    .slogan {
+        font-size: 12px; /* Decrease font size */
+    }
+	.herodate2 {
 		font-size: 12px; /* Decrease font size */
 	}
 }
