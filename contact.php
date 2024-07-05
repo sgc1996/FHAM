@@ -455,7 +455,7 @@ if (isset($_POST['submit'])) {
 
        
 
-        <div class="partner-logo-1 owl-carousel" style="padding-top: 30px;">
+         <div class="partner-logo-1 owl-carousel" style="padding-top: 30px; margin-left: 2%;">
             <a href="https://worldchefs.org/" class="pl-table" target="_blank">
                 <div class="pl-tablecell">
                     <img src="img/partner-logo/partner-1.png" alt="">

@@ -3563,12 +3563,12 @@ a {
 
 @media screen and (min-width: 1200px) {
     .cos-section {
-        margin-left: -3%;
+        margin-left: 0%;
     }
 }
 @media screen and (min-width: 1360px) {
     .cos-section {
-        margin-left: -4%;
+        margin-left: 0%;
     }
 }
 
