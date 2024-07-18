@@ -758,7 +758,7 @@ ol {
     }
 
     .hero-text .primary-btn {
-        font-size: 8px; /* Decrease font size */
+        font-size: 7px; /* Decrease font size */
     }
 	.col-lg-8.offset-lg-4 {
 		margin-left: 5%;
@@ -3039,6 +3039,13 @@ ol {
     text-decoration: none;
 }
 
+/* Media query for screen width under 500px */
+@media (max-width: 500px) {
+    .primary-btn {
+        padding: 5px 10px; /* Adjust the padding for smaller screens */
+    }
+}
+
 /* Price Table */
 button,
 input,
@@ -3788,7 +3795,7 @@ a {
 font-weight: 700;
 line-height: 20px;
 font-size: 23px;
-padding-top: 15px;
+padding-top: 40px;
 padding-bottom: 20px;
 width: max-content;
 }
