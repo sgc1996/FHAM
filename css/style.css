@@ -3493,6 +3493,40 @@ a {
    margin-left: 0px;
 }
 
+
+/*Co-sposnsor slider*/
+.partner-logo-co {
+    display: inline-block;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #2f3039;
+    margin: 0 auto; /* Center the partner logos */
+}
+
+
+.partner-logo-co .pl-table {
+    display: inline-block;
+    text-align: center;
+}
+
+.partner-logo-co .pl-table .pl-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+    height: auto;
+    padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.partner-logo-co .pl-table .logo-name {
+    margin-top: 10px;
+}
+
+.partner-logo-co.owl-carousel img {
+    /* Your styles here */
+    width: 100%; /* Example width */
+   margin-left: 0px;
+}
+
 /*Static Report Stylese */
 .report-box {
     border: 1px solid #ccc;
