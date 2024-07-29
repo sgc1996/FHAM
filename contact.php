@@ -486,7 +486,11 @@ if (isset($_POST['submit'])) {
                     <img src="img/partner-logo/partner-6.png" alt="">
                 </div>
             </a>
-           
+            <a href="https://corporate.visitmaldives.com/" class="pl-table" target="_blank">
+                <div class="pl-tablecell">
+                    <img src="img/partner-logo/partner-9.png" alt="">
+                </div>
+            </a>
             
         </div>
 
