@@ -90,6 +90,31 @@
         }
     });
 
+    $(".partner-logo-co").owlCarousel({
+        items: 8,
+        dots: false,
+        autoplay: true,
+        loop: true,
+        smartSpeed: 1200,
+        margin: 30, // Adjust this value to reduce the gap
+        responsive: {
+            320: {
+                items: 2,
+            },
+            480: {
+                items: 3,
+            },
+            768: {
+                items: 4,
+            },
+            992: {
+                items: 5,
+            },
+          
+        }
+    });
+
+
     /*------------------------
 		Testimonial Slider
     ----------------------- */
