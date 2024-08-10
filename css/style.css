@@ -3990,5 +3990,12 @@ width: max-content;
     opacity: 1;
 }
 
+/*About image Center*/
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 
