@@ -449,17 +449,17 @@ if (isset($_POST['submit'])) {
         <!-- CoSponsor Section Begin -->
         <div class="partner-logo owl-carousel" style="border-top: #fdfdfd; padding-top: 0; padding-bottom: 0; background-color: white;">
             
-            <div class="pl-table">
+        <div class="pl-table">
                 <div class="pl-tablecell">
                     <a href="https://lily-international.com/" target="_blank">
                     <img src="img/partner-logo/Sponsor/0.jpg" alt="">
                    
                     </a>
                 </div>
-            </div>
-            <div class="pl-table">
+            </div>    
+        <div class="pl-table">
                 <div class="pl-tablecell">
-                    <a href="https://worldchefs.org/" target="_blank">
+                    <a href="https://www.nestle.lk/brands/nestle-professional" target="_blank">
                     <img src="img/partner-logo/Sponsor/1.jpg" alt="">
                    
                     </a>
@@ -467,7 +467,7 @@ if (isset($_POST['submit'])) {
             </div>
             <div class="pl-table">
                 <div class="pl-tablecell">
-                    <a href="https://www.facebook.com/ChefsGuildofMaldives/" target="_blank">
+                    <a href="https://www.simdi.com/" target="_blank">
                     <img src="img/partner-logo/Sponsor/2.jpg" alt="" >
              
                 </a>
@@ -475,7 +475,15 @@ if (isset($_POST['submit'])) {
             </div>
             <div class="pl-table">
                 <div class="pl-tablecell">
-                    <a href="https://www.chefsguildoflanka.org/" target="_blank">
+                    <a href="https://www.cosmerc.mv/" target="_blank">
+                    <img src="img/partner-logo/Sponsor/10.jpg" alt="">
+                   
+                    </a>
+                </div>
+            </div>
+            <div class="pl-table">
+                <div class="pl-tablecell">
+                    <a href="http://www.euromarketingmaldives.com/" target="_blank">
                     <img src="img/partner-logo/Sponsor/5.jpg" alt="">
            
                     </a>
@@ -483,7 +491,7 @@ if (isset($_POST['submit'])) {
             </div>
             <div class="pl-table">
                 <div class="pl-tablecell">
-                    <a href="https://www.facebook.com/wicsglobal/" target="_blank">
+                    <a href="https://www.lavazza.com/en" target="_blank">
                     <img src="img/partner-logo/Sponsor/8.jpg" alt="">
               
                     </a>
@@ -491,7 +499,7 @@ if (isset($_POST['submit'])) {
             </div>
             <div class="pl-table">
                 <div class="pl-tablecell">
-                    <a href="https://mncci.org.mv/" target="_blank">
+                    <a href="https://en.fabbri1905.com/" target="_blank">
                     <img src="img/partner-logo/Sponsor/9.jpg" alt="">
                  
                     </a>
@@ -499,7 +507,7 @@ if (isset($_POST['submit'])) {
             </div>
             <div class="pl-table">
                 <div class="pl-tablecell">
-                    <a href="http://maldiveshousekeepers.com/" target="_blank">
+                    <a href="https://www.celciusbedding.com/home" target="_blank">
                     <img src="img/partner-logo/Sponsor/4.jpg" alt="">
       
                     </a>
@@ -508,7 +516,7 @@ if (isset($_POST['submit'])) {
     
             <div class="pl-table">
                 <div class="pl-tablecell">
-                    <a href="https://corporate.visitmaldives.com/" target="_blank">
+                    <a href="https://www.huxberry.com/" target="_blank">
                     <img src="img/partner-logo/Sponsor/6.jpg" alt="">
       
                     </a>
@@ -517,7 +525,7 @@ if (isset($_POST['submit'])) {
     
             <div class="pl-table">
                 <div class="pl-tablecell">
-                    <a href="https://corporate.visitmaldives.com/" target="_blank">
+                    <a href="https://www.pestexmaldives.com/" target="_blank">
                     <img src="img/partner-logo/Sponsor/7.jpg" alt="">
       
                     </a>
