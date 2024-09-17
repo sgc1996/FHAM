@@ -449,15 +449,15 @@ if (isset($_POST['submit'])) {
         <!-- CoSponsor Section Begin -->
         <div class="partner-logo owl-carousel" style="border-top: #fdfdfd; padding-top: 0; padding-bottom: 0; background-color: white;">
             
-        <div class="pl-table">
+            <div class="pl-table">
                 <div class="pl-tablecell">
                     <a href="https://lily-international.com/" target="_blank">
                     <img src="img/partner-logo/Sponsor/0.jpg" alt="">
                    
                     </a>
                 </div>
-            </div>    
-        <div class="pl-table">
+            </div>
+            <div class="pl-table">
                 <div class="pl-tablecell">
                     <a href="https://www.nestle.lk/brands/nestle-professional" target="_blank">
                     <img src="img/partner-logo/Sponsor/1.jpg" alt="">
@@ -499,7 +499,7 @@ if (isset($_POST['submit'])) {
             </div>
             <div class="pl-table">
                 <div class="pl-tablecell">
-                    <a href="https://www.celciusbedding.com/home" target="_blank">
+                    <a href="https://furnituremaldives.com/" target="_blank">
                     <img src="img/partner-logo/Sponsor/4.jpg" alt="">
       
                     </a>
@@ -547,13 +547,57 @@ if (isset($_POST['submit'])) {
                     </a>
                 </div>
             </div>
+
+            <div class="pl-table">
+                <div class="pl-tablecell">
+                    <a href="https://www.facebook.com/Aquoslogistics/" target="_blank">
+                    <img src="img/partner-logo/Sponsor/13.jpg" alt="">
+                   
+                    </a>
+                </div>
+            </div>
+
+            <div class="pl-table">
+                <div class="pl-tablecell">
+                    <a href="https://www.facebook.com/lesouqcafemv/" target="_blank">
+                    <img src="img/partner-logo/Sponsor/14.jpg" alt="">
+                   
+                    </a>
+                </div>
+            </div>
     
         </div>
   <!-- CoSponsor Section End -->
 
        
 
-         <div class="partner-logo-1 owl-carousel" style="padding-top: 30px; margin-left: 2%;">
+  <div class="partner-logo-1 owl-carousel" style="padding-top: 30px; margin-left: 2%;">
+            
+  <a href="https://www.nescafe.com/" class="pl-table" target="_blank">
+                <div class="pl-tablecell">
+                    <img src="img/partner-logo/category/footer/1.png" alt="">
+                </div>
+            </a>
+            <a href="https://www.nestle.com/brands/culinary-chilled-frozen/maggi" class="pl-table" target="_blank">
+                <div class="pl-tablecell">
+                    <img src="img/partner-logo/category/footer/2.png" alt="">
+                </div>
+            </a>
+            <a href="https://www.nestle.com/brands/drinks/milo" class="pl-table" target="_blank">
+                <div class="pl-tablecell">
+                    <img src="img/partner-logo/category/footer/3.png" alt="">
+                </div>
+            </a>
+            <a href="https://www.facebook.com/p/Dunar-Foods-Ltd-100066586791389/" class="pl-table" target="_blank">
+                <div class="pl-tablecell">
+                    <img src="img/partner-logo/category/footer/4.png" alt="">
+                </div>
+            </a>
+            <a href="https://dicl.lk/" class="pl-table" target="_blank">
+                <div class="pl-tablecell">
+                    <img src="img/partner-logo/category/footer/5.png" alt="">
+                </div>
+            </a>
             <a href="https://worldchefs.org/" class="pl-table" target="_blank">
                 <div class="pl-tablecell">
                     <img src="img/partner-logo/partner-1.png" alt="">
@@ -574,11 +618,7 @@ if (isset($_POST['submit'])) {
                     <img src="img/partner-logo/partner-4.png" alt="" target="_blank">
                 </div>
             </a>
-            <a href="https://mncci.org.mv/" class="pl-table">
-                <div class="pl-tablecell">
-                    <img src="img/partner-logo/partner-5.png" alt="" target="_blank">
-                </div>
-            </a>
+            
             <a href="http://maldiveshousekeepers.com/" class="pl-table" target="_blank">
                 <div class="pl-tablecell">
                     <img src="img/partner-logo/partner-6.png" alt="">
@@ -589,6 +629,7 @@ if (isset($_POST['submit'])) {
                     <img src="img/partner-logo/partner-9.png" alt="">
                 </div>
             </a>
+           
             
         </div>
 
