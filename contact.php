@@ -533,8 +533,8 @@ if (isset($_POST['submit'])) {
             </div>
             <div class="pl-table">
                 <div class="pl-tablecell">
-                    <a href="https://zanhotelsmaldives.com/" target="_blank">
-                    <img src="img/partner-logo/Sponsor/11.jpg" alt="">
+                    <a href="https://www.facebook.com/lesouqcafemv/" target="_blank">
+                    <img src="img/partner-logo/Sponsor/14.jpg" alt="">
                    
                     </a>
                 </div>
@@ -547,7 +547,23 @@ if (isset($_POST['submit'])) {
                     </a>
                 </div>
             </div>
-
+            <div class="pl-table">
+                <div class="pl-tablecell">
+                    <a href="https://www.dhiraagu.com.mv/personal" target="_blank">
+                    <img src="img/partner-logo/Sponsor/15.jpg" alt="">
+                   
+                    </a>
+                </div>
+            </div>
+            <div class="pl-table">
+                <div class="pl-tablecell">
+                    <a href="https://zanhotelsmaldives.com/" target="_blank">
+                    <img src="img/partner-logo/Sponsor/11.jpg" alt="">
+                   
+                    </a>
+                </div>
+            </div>
+            
             <div class="pl-table">
                 <div class="pl-tablecell">
                     <a href="https://www.facebook.com/Aquoslogistics/" target="_blank">
@@ -556,19 +572,9 @@ if (isset($_POST['submit'])) {
                     </a>
                 </div>
             </div>
-
-            <div class="pl-table">
-                <div class="pl-tablecell">
-                    <a href="https://www.facebook.com/lesouqcafemv/" target="_blank">
-                    <img src="img/partner-logo/Sponsor/14.jpg" alt="">
-                   
-                    </a>
-                </div>
-            </div>
     
         </div>
   <!-- CoSponsor Section End -->
-
        
 
   <div class="partner-logo-1 owl-carousel" style="padding-top: 30px; margin-left: 2%;">
