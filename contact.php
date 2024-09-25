@@ -185,6 +185,7 @@ if (isset($_POST['submit'])) {
                     <li><a href="./index.html" >HOME</a></li>
                     <li><a href="./about-us.html">ABOUT</a></li>
                     <li><a href="Exhibition.html">EXHIBITION</a></li>
+                    <li><a href="https://drive.google.com/file/d/1y9e8YCZor_CZ1NEsys9MlwOALshKuxOO/view?usp=sharing" target="_blank">EXHIBITOR DIRECTORY</a></li>
                     <li><a> CHALLENGES</a>
                         <ul class="dropdown">
                             <li><a href="Challenge-1.html" >CULINARY</a></li>
@@ -197,7 +198,7 @@ if (isset($_POST['submit'])) {
                     <li><a href="./contact.php" style="color: #0072ad;">CONTACT</a></li>
                 </ul>
             </nav>
-               <a href="https://drive.google.com/file/d/1y9e8YCZor_CZ1NEsys9MlwOALshKuxOO/view?usp=sharing" class="primary-btn top-btn" style="color: aliceblue;"  target="_blank"><i class="fa fa-folder "></i> EXHIBITOR DIRECTORY </a>
+               <!--<a href="https://drive.google.com/file/d/1y9e8YCZor_CZ1NEsys9MlwOALshKuxOO/view?usp=sharing" class="primary-btn top-btn" style="color: aliceblue;"  target="_blank"><i class="fa fa-folder "></i> EXHIBITOR DIRECTORY </a>-->
             </div>
             <div id="mobile-menu-wrap"></div>
         </div>
