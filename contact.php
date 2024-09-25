@@ -197,7 +197,7 @@ if (isset($_POST['submit'])) {
                     <li><a href="./contact.php" style="color: #0072ad;">CONTACT</a></li>
                 </ul>
             </nav>
-               <a href="https://fhamaldives.com/form-db/" class="primary-btn top-btn" style="color: aliceblue;"  target="_blank"><i class="fa fa-ticket"></i> RESERVE STALLS</a>
+               <a href="https://drive.google.com/file/d/1y9e8YCZor_CZ1NEsys9MlwOALshKuxOO/view?usp=sharing" class="primary-btn top-btn" style="color: aliceblue;"  target="_blank"><i class="fa fa-folder "></i> EXHIBITOR DIRECTORY </a>
             </div>
             <div id="mobile-menu-wrap"></div>
         </div>
